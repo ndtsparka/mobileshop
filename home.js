@@ -24,16 +24,16 @@ let iphone =[{
     'img':'./img/iphone-xs-gold-400x460-1-400x460.png'
 },
 {
-    'name':'IPHONE 7 PLUS',
-    'price':10.990.000đ,
+    'name':'IPHONE Xs 64GB',
+    'price':17.990.000đ,
     'description':'Ưu đãi khủng đến 2 triệu khi đặt sớm',
     'img':'./img/iphone-xs-gold-400x460-1-400x460.png'
 },
 {
-    'name':'IPHONE 7 PLUS',
-    'price':10.990.000đ,
+    'name':'IPHONE 11 64GB',
+    'price':19.990.000đ,
     'description':'Ưu đãi khủng đến 2 triệu khi đặt sớm',
-    'img':'./img/iphone-xs-gold-400x460-1-400x460.png'
+    'img':'./img/iphone-11-red-2-400x460-400x460.png'
 },
 ]
 
