@@ -72,7 +72,7 @@ let products = [{
     'name': 'SAMSUNG GALAXY A31',
     'price': '6.090.000đ',
     'description': 'Quà tặng 300.000đ',
-    'img': './img/samsung-galaxy-a31-400x460-white-400x460.png-11-red-2-400x460-400x460.png'
+    'img': './img/samsung-galaxy-a31.png'
 },
 {
     'name': 'SAMSUNG GALAXY NOTE20 ULTRA',
@@ -103,25 +103,26 @@ let products = [{
 function display(listProduct) {
     let domProducts = document.getElementById('products');
     domProducts.innerHTML = '';
-    for (const product of listProduct) {
+    
+    for (const product of products) {
         let info = `
-      <div>
-         <div>
-         <img src="${product.img}" alt=""  width="240px" height="240px">
-         </div>
-        <div>
-            <h5>
+      <div class="content">
+            <div class="content-img">
+                <img src="${product.img}" alt=""  width="240px" height="240px">
+            </div>
+            <div class="content-name">
+                <h4>
                 ${product.name}
-            </h5>
-        </div>
-        <div>
-              <h6>
-                 ${product.price}
-              </h6>
-        </div>
-         <div>
-           <p>${product.description}</p>
-          <div>
+                </h4>
+            </div>
+            <div class="content-price">
+                  <h4>
+                     ${product.price}
+                  </h4>
+            </div>
+            <div class = "content-descripton">
+                <p>${product.description}</p>
+            <div>
       </div>
       `
         domProducts.innerHTML += info;
