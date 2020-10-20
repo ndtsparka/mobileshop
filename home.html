@@ -13,37 +13,56 @@
     <div class="header">
         <div class="header-title">
                 <h3>Welcome Mobile Store</h3>
+                <p>The Phone world</p>
         </div>
         <div class="header-search">
-                <input class="text-search" type="text" placeholder="Bạn tìm gì...">
-                <button class="btnsearch">
-                    <img src="img/search.png" alt="btnsearch">
-                </button>
+                <input class="text-search" type="text" placeholder="Tìm kiếm sản phẩm...">
         </div>
-        
-        <div class="header-menu-info">
-            <a href="#" class="actmenu">
-                <i class="actmenu-icon"></i>
-                <p>Giỏ hàng</p>
-            </a>   
+        <div class="btnsearch">
+            <button class="btn-search">
+                <img src="img/search.png" alt="btnsearch">
+            </button>
+        </div>
+        <div class="header-deco">
+            <img src="img/deco.png" alt="" height="45px" width="100px">
         </div>
     </div>
     <div class="bar">
         <ul class="tab">
-            <li class="tab-item">APLE</li>
-            <li class="tab-item">SAMSUNG</li>
-            <li class="tab-item">OPPO</li>
-            <li class="tab-item">TRẢ GÓP</li>
-            <li class="tab-item">KHUYẾN MÃI</li>
-            <li class="tab-item">TIN TỨC</li>
+            <li class="tab-item all" onclick="changedisplay('all',this)">TẤT CẢ</li>
+            <li class="tab-item apple" onclick="changedisplay('iphone',this)">APPLE</li>
+            <li class="tab-item samsung" onclick="changedisplay('samsung',this)">SAMSUNG</li>
+            <li class="tab-item oppo" onclick="changedisplay('oppo',this)">OPPO</li>
+            <li class="tab-item tragop">TRẢ GÓP</li>
+            <li class="tab-item khuyenmai">KHUYẾN MÃI</li>
+            <li class="tab-item news">TIN TỨC</li>
+            <li class="tab-item">
+                <img src="img/actmenu-icon.jpg" alt="" width="24px" height="24px">
+            </li>
+            <li class="tab-item-menu">
+                <a href="#">Giỏ hàng của bạn</a>
+            </li>
         </ul>
-
     </div>
           
-    <div class="main">
+    <div class="main" id="all">
         <div id="products" class="row">
          </div>
     </div>
+    <div class="main" id="iphone">
+        <div id="iphone" class="row">
+         </div>
+    </div>
+    <div class="main" id="oppo">
+        <div id="oppo" class="row">
+         </div>
+    </div>
+    <div class="main" id="samsung">
+        <div id="samsung" class="row">
+         </div>
+    </div>
+
+
     <div class="footer">
         <div>
             <p>Cơ sở 1: Tầng 6, toà C, 22 Thành Công, Hà Nội</p>
