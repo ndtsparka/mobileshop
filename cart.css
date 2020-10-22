@@ -1,0 +1,199 @@
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+body {
+	background-color: #f0f0f0;
+}
+
+.btn {
+  background: linear-gradient(90deg, rgba(253,110,29,1) 0%, rgba(245,144,0,1) 35%);
+  color: white;
+  padding: 12px;
+  margin: 10px 0 10px 70px;
+  border: none;
+  width: 400px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.top-bar {
+	text-align: center;
+	margin: auto;
+	width: 595px;
+	padding: 15px 0 35px 0;
+}
+.top-bar .buymore {
+	float:left;
+	color: #288ad6;
+}
+
+.top-bar .yourcart {
+	float:right;
+}
+
+.main-cart {
+	background-color: white;
+	margin: auto;
+	width: 535px;
+	box-shadow: 0 0 15px #ccc;
+	padding: 25px 30px 20px 30px;
+}
+
+.detail-cart .list-option {
+	border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.detail-cart .list-option .right {
+	display: inline-block;
+	padding-left: 5px;
+	position: absolute;
+	width: 450px;
+}
+
+.detail-cart .list-option .right .desc ul {
+	padding: 5px 0 5px 15px;
+	font-size: 14px;
+	margin: 0px;
+}
+
+.detail-cart .list-option .right .phone-name a {
+	font-weight: bold;
+}
+
+.detail-cart .list-option .right .phone-name span:nth-child(2) {
+	float:right;
+	color: #c10017;
+}
+
+.detail-cart .list-option .right .buy-option .quantity {
+	float: right;
+	width: 29%;
+}
+
+.detail-cart .list-option .right .buy-option .quantity input {
+	text-align: center;
+	width: 37px;
+	height: 32px;
+	margin: 0px;
+	font-size: 14px;
+	cursor: initial;
+}
+
+.detail-cart .list-option .right .buy-option .quantity button {
+	width: 37px;
+	height: 39px;
+	margin: 0px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.detail-cart .list-option .left {
+	width: 80px;
+	display: inline-block;
+}
+
+.detail-cart .list-option .left .delete-button {
+	text-align: center;
+	margin: 10px 0 10px 0;
+	font-size: 14px;
+	color: #999; 
+}
+
+.detail-cart .list-option .left .image-preview a img {
+	width: 75px;
+	height: 75px;
+}
+
+
+.detail-cart .total-price {
+	padding: 10px 0px 30px 0px;
+	border-bottom: 1px solid rgb(215, 215, 215); 
+}
+
+.detail-cart .total-price div {
+	line-height: 22px;
+}
+
+.detail-cart .total-price div span:nth-child(2) {
+	float: right;
+}
+
+.detail-cart .total-price .total {
+	line-height: 22px;
+}
+
+.detail-cart .total-price .total strong {
+	float: right;
+	color: #c10017;
+}
+
+.info-customer .gender {
+	padding: 20px 0 0 0;
+}
+
+.info-customer .gender input {
+	margin: 0px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.info-customer .gender label {
+	margin: 0 20px 0 0;
+	cursor: pointer;
+}
+
+.info-customer .name-phone-number input, .address input  {
+	padding: 10px 10px;
+	width: 240px;
+	border: 1px solid rgb(215, 215, 215);
+	border-radius: 4px;
+	height: 20px;
+	margin: 10px 0 0;
+}
+
+.info-customer .address {
+	padding: 10px 0 0 0;
+}
+
+.info-customer input:nth-child(2) {
+	float: right;
+}
+
+.info-customer .service {
+	margin: 10px 0;
+}
+
+.info-customer .service input {
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+
+.info-customer .service label {
+	cursor: pointer;
+}
+
+.order-submit {
+	margin: 20px 0 0 0;
+}
+
+.order-submit p {
+	text-align: center;
+	margin: 0px;
+	font-size: 15.5px;
+}
+
+.term-agreement {
+	text-align: center;
+	margin: 10px 0 0 0;
+	color: #999;
+	font-size: 13px;
+}

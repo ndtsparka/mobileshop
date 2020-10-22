@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Giỏ hàng</title>
+	<link rel="stylesheet" href="cart.css">
+</head>
+<body>
+	<!-- mini bar on top -->
+	<div class="top-bar">
+		<a href="index.html" class="buymore">Mua thêm sản phẩm khác</a>
+		<span class="yourcart">Giỏ hàng của bạn</span>
+	</div>
+	<!--mini bar on top -->
+	
+	<!-- trang giỏ hàng chính -->
+	<div class="main-cart">
+		<form>
+			<!-- Danh sách sản phẩm và tổng giá tiền -->
+			<div class="detail-cart">
+				<!-- Danh sách sản phẩm đã chọn -->
+				<div class="list-option">
+					<div class="left">
+						<!--Ảnh minh họa -->
+						<div class="image-preview">
+							<a href="#"><img src="https://cdn.tgdd.vn/Products/Images/42/220654/oppo-a92-black-200x200-180x125.png" alt=""></a>
+						</div>
+						<!-- Xóa sản phẩm khỏi giỏ hàng -->
+						<div class="delete-button">
+							<a href="#">Xóa</a>	
+						</div>
+					</div>
+					<div class="right">
+						<!-- Tên và giá -->
+						<div class="phone-name">
+							<a href="#">NAME</a>
+							<span>0₫</span>
+						</div>
+						<!-- Thông tin, khuyến mãi -->
+						<div class="desc">
+							<ul>
+								<li>Tặng miễn phí iPhone 12.</li>
+							</ul>
+						</div>
+						<!-- Thêm/bớt hoặc đổi màu sp -->
+						<div class="buy-option">
+							<!-- <div class="product-color">
+								<button onclick="productColor()" class="dropbtn">Màu</button>
+								<div id="choose-color" class="dropdown-content">
+									<a href="#">Đen</a>
+									<a href="#">Trắng</a>
+								</div>
+							</div> -->
+
+							<!-- Thêm/bớt số lượng sản phẩm -->
+							<div class="quantity">
+								<button class="decreaseButton minus" type="button">-</button>
+								<input type="text" name="quantity" value="1" readonly='readonly'/>
+								<button class="increaseButton plus" type="button">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Danh sách sản phẩm đã chọn -->
+
+				<!-- hiển thị giá tiền -->
+				<div class="total-price">
+					<div>
+						<span>Tổng tiền:</span>
+						<span>0đ</span>
+					</div>
+					<div class="total">
+						<b>Cần thanh toán:</b>
+						<strong>0đ</strong>
+					</div>
+				</div>
+				<!-- hiển thị giá tiền -->
+			</div>
+			<!-- Danh sách sản phẩm và tổng giá tiền -->
+
+
+			<!-- thông tin người mua -->
+			<div class="info-customer">
+				<!-- Giới tính -->
+				<div class="gender">
+					<input type="radio" name="gender" value="male" id="male">
+					<label for="male">Anh</label>
+					<input type="radio" name="gender" value="female" id="female">
+					<label for="female">Chị</label>
+				</div>
+				<!-- Tên/SĐT -->
+				<div class="name-phone-number">
+					<input type="text" placeholder="Họ và tên">
+					<input type="text" placeholder="Số điện thoại">
+				</div>
+				<!-- Địa chỉ -->
+				<div class="address">
+					<label>Địa chỉ giao hàng</label>
+					<!-- Tỉnh/Thành và Quận/Huyện -->
+					<div class="city-dist">
+						<input type="text" placeholder="Tỉnh/Thành phố">
+						<input type="text" placeholder="Quận/Huyện">
+					</div>
+					<!-- Phường/Xã, số nhà, tên đường -->
+					<div class="ward-str">
+						<input type="text" placeholder="Phường/xã">
+						<input type="text" placeholder="Số nhà, tên đường">
+					</div>
+				</div>
+				<!-- Dịch vụ đi kèm -->
+				<div class="service">
+					<input type="checkbox" name="alternative-receiver" value="alt-receiver" id="alt-receiver">
+					<label for="alt-receiver">Gọi người khác nhận hàng (nếu có)</label><br>
+					<input type="checkbox" name="invoice" value="invoice" id="invoice">
+					<label for="invoice">Xuất hoá đơn</label>
+				</div>
+			</div>
+			<!-- thông tin người mua -->
+			<div class="order-submit">
+				<input type="submit" value="ĐẶT HÀNG" class="btn"><br>
+				<p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p>
+			</div>
+		</form>
+	</div>
+	<!-- trang giỏ hàng chính -->
+
+	<div class="term-agreement">
+		<span class="term">Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của Thegioididong</span>
+	</div>
+
+	<script src="cart.js"></script>
+</body>
+</html>
