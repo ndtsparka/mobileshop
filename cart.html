@@ -9,7 +9,7 @@
 <body>
 	<!-- mini bar on top -->
 	<div class="top-bar">
-		<a href="index.html" class="buymore">Mua thêm sản phẩm khác</a>
+		<a href="home.html" class="buymore">Mua thêm sản phẩm khác</a>
 		<span class="yourcart">Giỏ hàng của bạn</span>
 	</div>
 	<!--mini bar on top -->
@@ -23,8 +23,8 @@
 				<div class="list-option">
 					<div class="left">
 						<!--Ảnh minh họa -->
-						<div class="image-preview">
-							<a href="#"><img src="https://cdn.tgdd.vn/Products/Images/42/220654/oppo-a92-black-200x200-180x125.png" alt=""></a>
+						<div id="image-preview">
+
 						</div>
 						<!-- Xóa sản phẩm khỏi giỏ hàng -->
 						<div class="delete-button">
@@ -33,15 +33,12 @@
 					</div>
 					<div class="right">
 						<!-- Tên và giá -->
-						<div class="phone-name">
-							<a href="#">NAME</a>
-							<span>0₫</span>
+						<div id="phone-name-price">
+
 						</div>
 						<!-- Thông tin, khuyến mãi -->
-						<div class="desc">
-							<ul>
-								<li>Tặng miễn phí iPhone 12.</li>
-							</ul>
+						<div id="desc">
+
 						</div>
 						<!-- Thêm/bớt hoặc đổi màu sp -->
 						<div class="buy-option">
@@ -65,12 +62,15 @@
 				<!-- Danh sách sản phẩm đã chọn -->
 
 				<!-- hiển thị giá tiền -->
-				<div class="total-price">
-					<div>
+				<div class="order-summary">
+					<div id="order-items">
 						<span>Tổng tiền:</span>
 						<span>0đ</span>
 					</div>
-					<div class="total">
+					<!-- <div id="order-discount">
+
+					</div> -->
+					<div id="order-total">
 						<b>Cần thanh toán:</b>
 						<strong>0đ</strong>
 					</div>
@@ -119,16 +119,18 @@
 			<!-- thông tin người mua -->
 			<div class="order-submit">
 				<input type="submit" value="ĐẶT HÀNG" class="btn"><br>
-				<p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p>
+				<!-- <p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p> -->
 			</div>
 		</form>
 	</div>
 	<!-- trang giỏ hàng chính -->
 
 	<div class="term-agreement">
-		<span class="term">Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của Thegioididong</span>
+		<span>Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của chúng tôi</span>
 	</div>
 
+	<script src="home.js"></script>
 	<script src="cart.js"></script>
+
 </body>
 </html>
