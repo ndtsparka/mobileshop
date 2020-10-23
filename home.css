@@ -1,0 +1,185 @@
+.baner-top img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.footer{
+    background-color: black;
+    display: flexbox;
+    color: white;
+}
+.header-title{
+    width: 250px;
+}
+.icon{
+   height: 20px;
+   width: 20px;
+   flex: 1;
+}
+.header-search .text-search {
+    border: 1px solid wheat;
+    background: white;
+    border-radius: 6px;
+    margin-left: 8px;
+    padding: 10px;
+    font-size: 15px;
+    text-indent: 10px;
+    width: 350px;
+}
+.btn-search {
+    margin-top: 16px;
+    height: 39px;
+    width: 44px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid wheat;
+    margin-left: -15px;
+}
+.header-deco {
+    margin: 12px 30px;
+    width: 232px;
+    height: 57px;
+    background-color: white;;
+}
+
+.content img:hover{
+    transform: scale(1.1);
+    transition: all ease 300ms;
+}
+.actmenu-icon{
+    background:url(img/actmenu-icon.jpg);
+}
+.header{
+    display: flex;
+    background-color:white;
+    height: 80px;
+    width: 100%;
+}
+
+.header-title h3{
+    color: bisque;
+    width: 190px;
+}
+.header-title p{
+    color: bisque;
+    
+}
+.header-search{
+    background-color: white;
+    height: 31px;
+    margin: 15px;
+    margin-left: 200px;
+    border-radius: 10px;
+
+    
+}
+
+.btnsearch img{
+    height: 15px;
+    width: 15px;
+    margin-top: 3px;
+    border: none;
+}
+.header-search .btnsearch {
+    border: none;
+    background: none;
+    height: 24px;
+    margin-top: 3px;
+}
+.content {
+    border: 0.5px solid moccasin;
+    width: 270px;
+    margin: 10px auto;
+    padding: 35px;
+    border-radius: 2%;
+}
+#products {
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 15px;
+}
+#main-iphone, #main-oppo, #main-samsung, #main-searchphone{
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 15px;
+   }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main{
+    margin: 0px 60px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+body {
+    background-color: blanchedalmond;
+}
+.bar{
+    background-color: #183544;
+    height: 49px;
+}
+.bar ul.tab {
+    display: flex;
+    color: white;
+    list-style: none;
+    height: 49px;
+    margin-left: 21px
+    
+
+}
+.bar ul.tab li{
+    padding: 13px;
+    text-align: center;
+   
+}
+.tab-item img{
+    margin-left: 600px;
+    margin-top: -5px;
+}
+.tab-item-menu a{
+    margin-left: -20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+ul.tab li.home{
+    background-color: tomato;
+    
+}
+ul.tab li.home a{
+    text-decoration: none;
+    color: white;
+}
+.hot-item li{
+    list-style: none;
+    border: 0.5px solid whitesmoke;
+    padding: 10px;
+}
+.itemhot{
+    display: flex;
+    flex-wrap: wrap;
+}
+.not-change img{
+    width: 420px;
+    height: 250px;
+}
+.hot-item{
+    background-color: white;
+    margin: 0 60px;
+}
+.change img{
+    height: 250px;
+    width: 250px;
+}
+.hot-item h3{
+    padding-top: 10px;
+}
+.sub-banner{
+    margin: 10px 60px;
+}
+.sub-banner img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
