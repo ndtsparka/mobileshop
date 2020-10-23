@@ -56,7 +56,7 @@ let products = [{
     'brand':'iphone'
 },
 {
-    'name': 'IPHONE Xs 64GB',
+    'name': 'IPHONE XS 64GB',
     'price': '17.990.000đ',
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
     'img': './img/iphone-xs-gold-400x460-1-400x460.png',
@@ -119,7 +119,7 @@ let products = [{
     'brand':'oppo'
 },
 {
-    'name': 'OPPO RENO4',
+    'name': 'OPPO RENO 4',
     'price': '8.490.000đ',
     'description': 'Quà tặng trị giá lên tới 500.000đ',
     'img': './img/oppo-reno4-260720-040737-400x460.png',
@@ -182,7 +182,7 @@ let products = [{
     'brand':'samsung'
 },
 {
-    'name': 'SAMSUNG GALAXY A71',
+    'name': 'SAMSUNG GALAXY A30S',
     'price': '6.290.000đ',
     'description': 'Giảm giá thêm 300.000đ',
     'img': './img/samsung-galaxy-a30s.jpg',
@@ -238,24 +238,39 @@ function changedisplay(type,element){
    document.getElementById(type).style.display = 'flex';
    switch (type){
        case 'all':
-           document.getElementById('iphone').style.display = 'none';
-           document.getElementById('samsung').style.display = 'none';
-           document.getElementById('oppo').style.display = 'none';
+           document.getElementById('main-iphone').style.display = 'none';
+           document.getElementById('main-samsung').style.display = 'none';
+           document.getElementById('main-oppo').style.display = 'none';
+           document.getElementById('main-searchphone').style.display = 'none';
+           document.getElementById('hot').style.display = 'none';
+           document.getElementById('sub').style.display='none';
            break;
-       case 'iphone':
+       case 'main-iphone':
         document.getElementById('all').style.display = 'none';
-        document.getElementById('oppo').style.display = 'none';
-        document.getElementById('samsung').style.display = 'none';
+        document.getElementById('main-oppo').style.display = 'none';
+        document.getElementById('main-samsung').style.display = 'none';
+        document.getElementById('main-searchphone').style.display = 'none';
+        document.getElementById('hot').style.display = 'none';
+        document.getElementById('sub').style.display='none';
+
         break;
-       case 'samsung':
+       case 'main-samsung':
         document.getElementById('all').style.display = 'none';
-        document.getElementById('oppo').style.display = 'none';
-        document.getElementById('iphone').style.display = 'none';
+        document.getElementById('main-oppo').style.display = 'none';
+        document.getElementById('main-iphone').style.display = 'none';
+        document.getElementById('main-searchphone').style.display = 'none';
+        document.getElementById('hot').style.display = 'none';
+        document.getElementById('sub').style.display='none';
+
         break;
-       case 'oppo':
+       case 'main-oppo':
         document.getElementById('all').style.display = 'none';
-        document.getElementById('iphone').style.display = 'none';
-        document.getElementById('samsung').style.display = 'none';
+        document.getElementById('main-iphone').style.display = 'none';
+        document.getElementById('main-samsung').style.display = 'none';
+        document.getElementById('main-searchphone').style.display = 'none';
+        document.getElementById('hot').style.display = 'none';
+        document.getElementById('sub').style.display='none';
+
         break;
         
 
@@ -365,3 +380,56 @@ function samsung() {
 
 }
 samsung();
+
+function displaysearchphone(phones){
+    let searchphone = document.getElementById('searchphone');
+    searchphone.innerHTML='';
+    for (const product of phones) {
+        let search = `
+      <div class="content">
+            <div class="content-img">
+                <img src="${product.img}" alt=""  width="240px" height="240px">
+            </div>
+            <div class="content-name">
+                <h4>
+                ${product.name}
+                </h4>
+            </div>
+            <div class="content-price">
+                  <h4>
+                     ${product.price}
+                  </h4>
+            </div>
+            <div class = "content-descripton">
+                <p>${product.description}</p>
+            <div>
+      </div>
+      `
+        searchphone.innerHTML += search;
+    }  
+}
+
+function searchPhone(){
+    let searchPhone = document.getElementById('text-search');
+    let disall = document.getElementById('all');
+        disall.style.display  = 'none';
+    let disiphone = document.getElementById('main-iphone');
+        disiphone.style.display = 'none';
+    let disoppo = document.getElementById('main-oppo');
+        disoppo.style.display = 'none';
+    let dissamsung = document.getElementById('main-samsung');
+        dissamsung.style.display = 'none';
+        let dishot = document.getElementById('hot');
+        dishot.style.display = 'none';
+    let dissub = document.getElementById('sub');
+        dissub.style.display = 'none';
+    let dissearch = document.getElementById('main-searchphone');
+        dissearch.style.display = 'flex';
+    
+    let search = searchPhone.value;
+    let result = products.filter(function(v) {
+        return v.name.toLowerCase().includes(search.toLowerCase())
+    });
+    console.log(result);
+    displaysearchphone(result);
+}

@@ -13,13 +13,12 @@
     <div class="header">
         <div class="header-title">
                 <h3>Welcome Mobile Store</h3>
-                <p>The Phone world</p>
         </div>
         <div class="header-search">
-                <input class="text-search" type="text" placeholder="Tìm kiếm sản phẩm...">
+                <input id="text-search" class="text-search" type="text" placeholder="Tìm kiếm sản phẩm...">
         </div>
         <div class="btnsearch">
-            <button class="btn-search">
+            <button class="btn-search" id="btn" onclick="searchPhone()">
                 <img src="img/search.png" alt="btnsearch">
             </button>
         </div>
@@ -29,13 +28,15 @@
     </div>
     <div class="bar">
         <ul class="tab">
+            <li class="tab-item home" >
+                <a href="home.html">HOME</a>
+            </li>
             <li class="tab-item all" onclick="changedisplay('all',this)">TẤT CẢ</li>
-            <li class="tab-item apple" onclick="changedisplay('iphone',this)">APPLE</li>
-            <li class="tab-item samsung" onclick="changedisplay('samsung',this)">SAMSUNG</li>
-            <li class="tab-item oppo" onclick="changedisplay('oppo',this)">OPPO</li>
-            <li class="tab-item tragop">TRẢ GÓP</li>
-            <li class="tab-item khuyenmai">KHUYẾN MÃI</li>
-            <li class="tab-item news">TIN TỨC</li>
+            <li class="tab-item apple" onclick="changedisplay('main-iphone',this)">APPLE</li>
+            <li class="tab-item samsung" onclick="changedisplay('main-samsung',this)">SAMSUNG</li>
+            <li class="tab-item oppo" onclick="changedisplay('main-oppo',this)">OPPO</li>
+            
+            
             <li class="tab-item">
                 <img src="img/actmenu-icon.jpg" alt="" width="24px" height="24px">
             </li>
@@ -44,21 +45,85 @@
             </li>
         </ul>
     </div>
-          
+   <ul class="hot-item" id="hot">
+       <h3>Điện thoại nổi bật</h3>
+       <div class="itemhot ">
+        <li class="not-change">
+            <img src="img/samsung-galaxy-note-20-ultra-hot.jpg" alt="">
+            <div class="price"><h4>Samsung Galaxy Note 20 Ultra</h4></div>
+            <div class="price"><h4>29.990.000đ</h4></div>
+            <div class="gift"><p>Quà <b>4.000.000đ</b></p></div>
+        </li>
+        <li class="change">
+            <img src="img/oppo-a52.jpg" alt="">
+            <div class="price"><h4>OPPO A52</h4></div>
+            <div class="price"><h4>5.690.000</h4></div>
+            <div class="gift"><p>Quà Giảm thêm 1.000.000đ/b></p></div>
+        </li>
+        <li class="change">
+            <img src="img/samsung-galaxy-a31.png" alt="">
+            <div class="price"><h4>Samsung Galaxy A31</h4></div>
+            <div class="price"><h4>6.090.000đ</h4></div>
+            <div class="gift"><p>Quà tặng 300.000đ</p></div>
+        </li>
+        <li class="change">
+            <img src="img/iphone-11-pro-max-512gb-gold-400x460.png" alt="">
+            <div class="price"><h4>IPHONE 11 PROMAX 512GB</h4></div>
+            <div class="price"><h4>38.990.000</h4></div>
+            <div class="gift"><p>Ưu đãi khủng đến 2 triệu khi đặt sớm</p></div>
+        </li>
+        <li class="not-change">
+            <img src="img/oppo-reno4-hot.jpg" alt="">
+            <div class="price"><h4>OPPO RENO 4</h4></div>
+            <div class="price"><h4>8.490.000đ</h4></div>
+            <div class="gift"><p>Quà tặng trị giá lên tới 500.000đ</p></div>
+        </li>
+        <li class="change">
+            <img src="img/samsung-galaxy-a30s.jpg" alt="">
+            <div class="price"><h4>Samsung Galaxy A30S</h4></div>
+            <div class="price"><h4>6.290.000đ</h4></div>
+            <div class="gift"><p>Giảm giá thêm 300.000đ</p></div>
+        </li>
+        <li class="change">
+            <img src="img/oppo-findx.jpg" alt="">
+            <div class="price"><h4>OPPO FIND X2</h4></div>
+            <div class="price"><h4>19.990.000đ</h4></div>
+            <div class="gift"><p>Quà tặng trị giá lên tới 2.000.000đ</b></p></div>
+        </li>
+        <li class="change">
+            <img src="img/iphone-se-128gb-2020-261820-101803-200x200.jpg" alt="">
+            <div class="price"><h4>IPhone SE 128GB</h4></div>
+            <div class="price"><h4>33.990.000đ</h4></div>
+            <div class="gift"><p>Giảm giá thêm 5% khi đặt sớm</b></p></div>
+        </li>
+    </div>
+   </ul>
+   <div class="sub-banner" id="sub">
+       <img src="img/banner-top2.png" alt="">
+   </div>
     <div class="main" id="all">
+         <div><h3>Tất cả điện thoại</h3></div>
         <div id="products" class="row">
          </div>
     </div>
-    <div class="main" id="iphone">
+    <div class="main" id="main-iphone">
+        <div class="iphone-title"><h3>Tất cả điện thoại Iphone</h3></div>
         <div id="iphone" class="row">
+            
          </div>
     </div>
-    <div class="main" id="oppo">
+    <div class="main" id="main-oppo">        <div><h3>Tất cả điện thoại oppo</h3></div>
         <div id="oppo" class="row">
          </div>
     </div>
-    <div class="main" id="samsung">
+    <div class="main" id="main-samsung">
+        <div><h3>Tất cả điện thoại Samsung</h3></div>
         <div id="samsung" class="row">
+         </div>
+    </div>
+    <div class="main" id="main-searchphone">
+        <div><h3>Kết quả tìm kiếm</h3></div>
+        <div id="searchphone" class="row">
          </div>
     </div>
 
