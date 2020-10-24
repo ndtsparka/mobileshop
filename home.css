@@ -156,13 +156,16 @@ ul.tab li.home a{
     border: 0.5px solid whitesmoke;
     padding: 10px;
 }
-.itemhot{
+#itemhot{
     display: flex;
     flex-wrap: wrap;
 }
 .not-change img{
     width: 420px;
     height: 250px;
+}
+.all-tit h3{
+    padding-top: 10px;
 }
 .hot-item{
     background-color: white;

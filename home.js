@@ -123,6 +123,7 @@ let products = [{
     'price': '8.490.000đ',
     'description': 'Quà tặng trị giá lên tới 500.000đ',
     'img': './img/oppo-reno4-260720-040737-400x460.png',
+    'imgsub':'./img/oppo-reno4-hot.jpg',
     'brand':'oppo'
 },
 {
@@ -158,6 +159,7 @@ let products = [{
     'price': '29.990.000đ',
     'description': 'Ưu đãi khủng đến 3 triệu khi đặt sớm',
     'img': './img/samsung-galaxy-note-20-ultra-vangdong-400x460-400x460.png',
+    'imgsub':'./img/samsung-galaxy-note-20-ultra-hot.jpg',
     'brand':'samsung'
 },
 {
@@ -430,6 +432,68 @@ function searchPhone(){
     let result = products.filter(function(v) {
         return v.name.toLowerCase().includes(search.toLowerCase())
     });
-    console.log(result);
     displaysearchphone(result);
 }
+
+function viewDetail(name){
+    localStorage.setItem('selected', name);
+    localStorage.setItem('products', JSON.stringify(products));
+    window.location.href = 'detail.html';
+}
+function displayhotitem(){
+    let phoneshot = document.getElementById('itemhot');
+       phoneshot.innerHTML = '';
+    let hotitem = `
+     <li class="not-change">
+        <img src="${products[22].imgsub}" alt="" >
+        <div class="price"><h4>${products[22].name}</h4></div>
+        <div class="price"><h4>${products[22].price}</h4></div>
+        <div class="gift"><p>${products[22].description}</b></p></div>
+    </li>
+    <li class="change">
+        <img src="${products[19].img}" alt="" >
+        <div class="price"><h4>${products[19].name}</h4></div>
+        <div class="price"><h4>${products[19].price}</h4></div>
+        <div class="gift"><p>${products[19].description}</b></p></div>
+    </li>
+    <li class="change">
+        <img src="${products[14].img}" alt="" >
+        <div class="price"><h4>${products[14].name}</h4></div>
+        <div class="price"><h4>${products[14].price}</h4></div>
+        <div class="gift"><p>${products[14].description}</b></p></div>
+    </li>
+    <li class="change">
+        <img src="${products[19].img}" alt="" >
+        <div class="price"><h4>${products[4].name}</h4></div>
+        <div class="price"><h4>${products[4].price}</h4></div>
+        <div class="gift"><p>${products[4].description}</b></p></div>
+    </li><li class="not-change">
+        <img src="${products[17].imgsub}" alt="" >
+        <div class="price"><h4>${products[17].name}</h4></div>
+        <div class="price"><h4>${products[17].price}</h4></div>
+        <div class="gift"><p>${products[17].description}</b></p></div>
+    </li>
+    <li class="change">
+        <img src="${products[26].img}" alt="" >
+        <div class="price"><h4>${products[26].name}</h4></div>
+        <div class="price"><h4>${products[26].price}</h4></div>
+        <div class="gift"><p>${products[26].description}</b></p></div>
+    </li>
+    <li class="change">
+        <img src="${products[16].img}" alt="" >
+        <div class="price"><h4>${products[16].name}</h4></div>
+        <div class="price"><h4>${products[16].price}</h4></div>
+        <div class="gift"><p>${products[16].description}</b></p></div>
+    </li>
+    <li class="change">
+        <img src="${products[11].img}" alt="" >
+        <div class="price"><h4>${products[11].name}</h4></div>
+        <div class="price"><h4>${products[11].price}</h4></div>
+        <div class="gift"><p>${products[11].description}</b></p></div>
+    </li>
+        `
+    phoneshot.innerHTML+= hotitem;
+    
+
+}
+displayhotitem();
