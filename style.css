@@ -64,7 +64,7 @@ img{
 	width: 100%;
 	height: 30px;
 	float: left;
-	background-color: black;
+	background-color: orange;
 	font-size: 12px;
 	font-weight: 600;
 	position: relative;
@@ -107,7 +107,7 @@ img{
 	display: inline-block;
 	width: 100%;
 	float: left;
-	background-color: yellow;
+	background-color:#ffa8001a;
 	padding: 15px 0;
 	border-bottom: 1px solid #00000010;
 }
@@ -217,7 +217,7 @@ img{
 	display: inline-block;
 	float: left;
 	padding: 25px 0;
-	background-color: yellow;
+	background-color: orange;
 }
 .footer .col-3{
 	width: 24%;
@@ -282,12 +282,12 @@ img{
 }
 .product-detail-right h3 small{
 	font-size: 14px;
-	color: gray;
+	color: black;
 }
 .product-detail-right h5{
 	font-size: 18px;
 	margin-bottom: 20px;
-	color: gray;
+	color: black;
 }
 .product-detail-right h5 b{
 	color: #000;
@@ -352,8 +352,8 @@ img{
 }
 .product-detail-left img{
 	max-width: inherit;
+	
 }
-
 /*Banner Style*/
 .banner{
 	width: 100%;
