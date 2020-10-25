@@ -42,7 +42,7 @@
     background-color: white;;
 }
 
-.content img:hover{
+.content-img:hover{
     transform: scale(1.1);
     transition: all ease 300ms;
 }
@@ -93,10 +93,24 @@
     padding: 35px;
     border-radius: 2%;
 }
+.content-search{
+    border: 0.5px solid moccasin;
+    width: 265px;
+    margin: 27px 4px 13px 0px;;
+    padding: 35px;
+    border-radius: 2%;
+   
+}
+.search-tit{
+    width: 100%;
+}
+.search-tit h3{
+    margin-left: 20px;
+}
 #products {
  display: flex;
  flex-wrap: wrap;
- margin-top: 15px;
+ 
 }
 #main-iphone, #main-oppo, #main-samsung, #main-searchphone{
     display: none;
@@ -106,9 +120,10 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
 }
 .main{
-    margin: 0px 60px;
+    margin: 15px 60px;
     background-color: white;
     flex-wrap: wrap;
 }
@@ -131,6 +146,7 @@ body {
 .bar ul.tab li{
     padding: 13px;
     text-align: center;
+    cursor: pointer;
    
 }
 .tab-item img{
@@ -164,8 +180,11 @@ ul.tab li.home a{
     width: 420px;
     height: 250px;
 }
-.all-tit h3{
-    padding-top: 10px;
+.all-title h3, .oppo-title h3, .iphone-title h3, .samsung-title h3 {
+    margin-left: 20px;
+}
+.all-title{
+    padding-top: 1px;
 }
 .hot-item{
     background-color: white;
@@ -185,4 +204,10 @@ ul.tab li.home a{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+.content-name h4 {
+    cursor: pointer;
+}
+.content-price, .content-descripton {
+    cursor: default;
 }

@@ -210,7 +210,7 @@ function display() {
                 <img src="${product.img}" alt=""  width="240px" height="240px">
             </div>
             <div class="content-name">
-                <h4>
+                <h4 onclick="viewDetail('${product.name}')">
                 ${product.name}
                 </h4>
             </div>
@@ -388,7 +388,7 @@ function displaysearchphone(phones){
     searchphone.innerHTML='';
     for (const product of phones) {
         let search = `
-      <div class="content">
+      <div class="content-search">
             <div class="content-img">
                 <img src="${product.img}" alt=""  width="240px" height="240px">
             </div>
@@ -445,51 +445,51 @@ function displayhotitem(){
        phoneshot.innerHTML = '';
     let hotitem = `
      <li class="not-change">
-        <img src="${products[22].imgsub}" alt="" >
-        <div class="price"><h4>${products[22].name}</h4></div>
-        <div class="price"><h4>${products[22].price}</h4></div>
-        <div class="gift"><p>${products[22].description}</b></p></div>
+        <img src="${products[22].imgsub}" class="content-img" >
+        <div class="content-name"><h4>${products[22].name}</h4></div>
+        <div class="content-price"><h4>${products[22].price}</h4></div>
+        <div class="content-descripton"><p>${products[22].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[19].img}" alt="" >
-        <div class="price"><h4>${products[19].name}</h4></div>
-        <div class="price"><h4>${products[19].price}</h4></div>
-        <div class="gift"><p>${products[19].description}</b></p></div>
+        <img src="${products[19].img}" class="content-img" >
+        <div class="content-name"><h4 onclick="viewDetail('${products[19].name}')">${products[19].name}</h4></div>
+        <div class="content-price"><h4>${products[19].price}</h4></div>
+        <div class="content-descripton"><p>${products[19].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[14].img}" alt="" >
-        <div class="price"><h4>${products[14].name}</h4></div>
-        <div class="price"><h4>${products[14].price}</h4></div>
-        <div class="gift"><p>${products[14].description}</b></p></div>
+        <img src="${products[14].img}" class="content-img" >
+        <div class="content-name"><h4>${products[14].name}</h4></div>
+        <div class="content-price"><h4>${products[14].price}</h4></div>
+        <div class="content-descripton"><p>${products[14].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[19].img}" alt="" >
-        <div class="price"><h4>${products[4].name}</h4></div>
-        <div class="price"><h4>${products[4].price}</h4></div>
-        <div class="gift"><p>${products[4].description}</b></p></div>
+        <img src="${products[19].img}" class="content-img" >
+        <div class="content-name"><h4>${products[4].name}</h4></div>
+        <div class="content-price"><h4>${products[4].price}</h4></div>
+        <div class="content-descripton"><p>${products[4].description}</b></p></div>
     </li><li class="not-change">
-        <img src="${products[17].imgsub}" alt="" >
-        <div class="price"><h4>${products[17].name}</h4></div>
-        <div class="price"><h4>${products[17].price}</h4></div>
-        <div class="gift"><p>${products[17].description}</b></p></div>
+        <img src="${products[17].imgsub}" class="content-img" >
+        <div class="content-name"><h4>${products[17].name}</h4></div>
+        <div class="content-price"><h4>${products[17].price}</h4></div>
+        <div class="content-descripton"><p>${products[17].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[26].img}" alt="" >
-        <div class="price"><h4>${products[26].name}</h4></div>
-        <div class="price"><h4>${products[26].price}</h4></div>
-        <div class="gift"><p>${products[26].description}</b></p></div>
+        <img src="${products[26].img}" class="content-img" >
+        <div class="content-name"><h4>${products[26].name}</h4></div>
+        <div class="content-price"><h4>${products[26].price}</h4></div>
+        <div class="content-descripton"><p>${products[26].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[16].img}" alt="" >
-        <div class="price"><h4>${products[16].name}</h4></div>
-        <div class="price"><h4>${products[16].price}</h4></div>
-        <div class="gift"><p>${products[16].description}</b></p></div>
+        <img src="${products[16].img}" class="content-img" >
+        <div class="content-name"><h4>${products[16].name}</h4></div>
+        <div class="content-price"><h4>${products[16].price}</h4></div>
+        <div class="content-descripton"><p>${products[16].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[11].img}" alt="" >
-        <div class="price"><h4>${products[11].name}</h4></div>
-        <div class="price"><h4>${products[11].price}</h4></div>
-        <div class="gift"><p>${products[11].description}</b></p></div>
+        <img src="${products[11].img}" class="content-img" >
+        <div class="content-name"><h4>${products[11].name}</h4></div>
+        <div class="content-price"><h4>${products[11].price}</h4></div>
+        <div class="content-descripton"><p>${products[11].description}</b></p></div>
     </li>
         `
     phoneshot.innerHTML+= hotitem;
@@ -497,3 +497,8 @@ function displayhotitem(){
 
 }
 displayhotitem();
+function viewDetail(name){
+    localStorage.setItem('selected', name);
+    localStorage.setItem('products', JSON.stringify(products));
+    window.location.href = 'detail.html';
+}
