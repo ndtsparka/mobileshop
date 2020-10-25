@@ -1,0 +1,369 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	outline: none;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+input{
+	box-sizing: border-box;
+	outline: none;
+}
+body {
+	line-height: 1;
+	font-family: open sans;
+	font-size: 14px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	max-width: 100%;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*Topbar Style*/
+.topbar{
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	float: left;
+	background-color: black;
+	font-size: 12px;
+	font-weight: 600;
+	position: relative;
+}
+.topleft{
+	float: left;
+}
+.topcenter{
+	float: left;
+	text-align: center;
+	margin: 0 25px;
+}
+.topright{
+	float: right;
+}
+.topbar ul{
+	line-height: 30px;
+}
+.topbar ul li{
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+}
+.topbar ul li a{
+	text-decoration: none;
+	display: inline-block;
+	color: #fff;
+	padding: 0 5px;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: 300ms;
+}
+.topbar ul li a:hover{
+	color: #000;
+}
+
+
+/*Header Style*/
+.header{
+	display: inline-block;
+	width: 100%;
+	float: left;
+	background-color: yellow;
+	padding: 15px 0;
+	border-bottom: 1px solid #00000010;
+}
+.header .logo{
+	float: left;
+	width: 20%;
+}
+.header .searchbar{
+	width: 45%;
+	float: left;
+}
+.searchbar .searchField{
+	width: 100%;
+	height: 35px;
+	padding: 15px;
+	border-radius: 50px;
+	border: 1px solid gainsboro;
+}
+.header .headerright{
+	float: right;
+}
+.header .headerright ul li{
+	display: inline-block;
+	padding: 10px 0;
+}
+.header .headerright ul li a{
+	text-decoration: none;
+	margin-left: 10px;
+	color: #333;
+}
+.header .headerright ul li .signBtn{
+	padding: 8px 13px;
+	border-radius: 50px;
+	background-color: black;
+	color: #fff;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Product Area Style*/
+.product-area{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 25px 0;
+}
+/*Product Area Heading*/
+.product-area h3{
+	font-size: 28px;
+	color: #333;
+	text-transform: uppercase;
+	border-bottom: 1px solid #d2d2d2;
+	font-weight: 600;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+.product-area .col-3{
+	width: 24%;
+	float: left;
+	display: inline-block;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: 0 .5% 35px;
+}
+.product-area a{
+	font-size: 14px;
+	columns: #333;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+}
+.product-area .caption{
+	padding: 10px 0;
+}
+.product-area a big{
+	font-weight: 600;
+}
+.product-area a h4{
+	font-size: 15px;
+	padding: 8px 0;
+	font-weight: 600;
+	line-height: 22px;
+	color: #737373;
+}
+
+
+
+
+
+
+
+
+
+
+/*Footer Style*/
+.footer{
+	width: 100%;
+	display: inline-block;
+	float: left;
+	padding: 25px 0;
+	background-color: yellow;
+}
+.footer .col-3{
+	width: 24%;
+	float: left;
+}
+.footer p{
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #333;	
+	line-height: 18px;
+}
+.footer p big{
+	font-weight: 700;
+}
+.footer .col-3 ul li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.copyright{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	float: left;
+	background-color: #ffa80080;
+	padding: 10px 0;
+	columns: #333;
+}
+
+
+
+
+
+
+
+/*Product Detail Page Style*/
+.product-detail{
+	display: inline-block;
+	float: left;
+	width: 100%;
+	padding: 45px 0;
+}
+.product-detail h3{
+	font-size: 24px;
+	padding: 15px 0;
+}
+.product-detail-left{
+	float: left;
+	width:40%;
+}
+.product-detail-right{
+	float: right;
+	width: 55%;
+}
+.product-detail-right h3{
+	font-size: 22px;
+	line-height: 24px;
+	padding-top: 0;
+}
+.product-detail-right h3 small{
+	font-size: 14px;
+	color: gray;
+}
+.product-detail-right h5{
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: gray;
+}
+.product-detail-right h5 b{
+	color: #000;
+}
+.product-detail-right .addtocart{
+	border: 1px solid;
+	color: #ffa800;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	display: inline-block;
+}
+.product-detail-right .writereview{
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 4px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.product-detail-right .buynow{
+	border: 1px solid #ffa800;
+	background-color: #ffa800;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 15px 25px;
+	border-radius: 4px;
+	margin-top: 20px;
+	width: 60%;
+	text-align: center;
+	display: inline-block;
+}
+
+.product-detail-feature{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	margin-top: 25px;
+	padding: 15px;
+	background-color: #ffa8001a;
+}
+.product-detail-feature h3{
+	font-weight: 500;
+	border-bottom: 1px solid;
+}
+.product-detail-feature p{
+	padding: 15px 0;
+	font-size: 18px;
+	border-bottom: 1px solid #dedede;
+	width: 50%;
+	float: left;
+}
+.product-detail .sp-wrap{
+	max-width: 100%;
+}
+.product-detail-left img{
+	max-width: inherit;
+}
+
+/*Banner Style*/
+.banner{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 35px 0;
+}
+.banner img{
+	border-radius: 4px;
+}
+
+
+
