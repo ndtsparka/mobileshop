@@ -567,7 +567,9 @@ function searchPhone(){
     let result = products.filter(function(v) {
         return v.name.toLowerCase().includes(search.toLowerCase())
     });
-    displaysearchphone(result);
+
+        displaysearchphone(result);
+    
 }
 
 function viewDetail(name){
