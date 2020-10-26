@@ -329,6 +329,7 @@ img{
 }
 
 .product-detail-feature{
+	color: black;
 	width: 100%;
 	float: left;
 	display: inline-block;
@@ -337,6 +338,7 @@ img{
 	background-color: #ffa8001a;
 }
 .product-detail-feature h3{
+	color: black;
 	font-weight: 500;
 	border-bottom: 1px solid;
 }
