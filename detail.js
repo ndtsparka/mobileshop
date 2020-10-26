@@ -14,4 +14,11 @@ document.getElementById('product-screen').innerHTML = product.screen;
 document.getElementById('product-os').innerHTML = product.OS;
 document.getElementById('product-camera').innerHTML = product.Camera;
 document.getElementById('product-ram').innerHTML=product.RAM;
-document.getElementById('product-rom').innerHTML=product.ROM
+document.getElementById('product-rom').innerHTML=product.ROM;
+document.getElementById('buynow').innerHTML = `<div class="buynow" onclick="viewDetail('${product.name}')"><i class="fas fa-shopping-cart" ></i> Mua ngay</div>`;
+
+function viewDetail(name){
+    localStorage.setItem('selected', name);
+    localStorage.setItem('products', JSON.stringify(products));
+    window.location.href = 'cart.html';
+}
