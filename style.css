@@ -302,16 +302,7 @@ img{
 	border-radius: 4px;
 	display: inline-block;
 }
-.product-detail-right .writereview{
-	color: #333;
-	font-size: 16px;
-	font-weight: 600;
-	text-decoration: none;
-	padding: 10px 15px;
-	border-radius: 4px;
-	margin-left: 20px;
-	display: inline-block;
-}
+
 .product-detail-right .buynow{
 	border: 1px solid #ffa800;
 	background-color: #ffa800;
