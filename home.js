@@ -407,7 +407,7 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
-
+       
         break;
         
 

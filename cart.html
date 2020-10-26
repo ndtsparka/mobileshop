@@ -118,7 +118,7 @@
 			</div>
 			<!-- thông tin người mua -->
 			<div class="order-submit">
-				<input type="submit" value="ĐẶT HÀNG" class="btn"><br>
+				<input type="submit" value="ĐẶT HÀNG" class="btn" onclick="success()"><br>
 				<!-- <p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p> -->
 			</div>
 		</form>
@@ -128,6 +128,15 @@
 	<div class="term-agreement">
 		<span>Bằng cách đặt hàng, bạn đồng ý với Điều khoản sử dụng của chúng tôi</span>
 	</div>
+
+	<div id="cart-success" class="add-success">
+		<div class="container">
+			<h1>Bạn đã đặt hàng thành công</h1>
+			<img src="img/success.png" alt="">
+			<button id="btn-success" onclick="comehome()">ok</button>
+     </div>
+	 </div>
+
 
 	<script src="cart.js"></script>
 
