@@ -240,15 +240,6 @@ img{
 	font-weight: 600;
 	margin-bottom: 15px;
 }
-.copyright{
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	float: left;
-	background-color: #ffa80080;
-	padding: 10px 0;
-	columns: #333;
-}
 
 
 
@@ -292,16 +283,7 @@ img{
 .product-detail-right h5 b{
 	color: #000;
 }
-.product-detail-right .addtocart{
-	border: 1px solid;
-	color: #ffa800;
-	font-size: 18px;
-	font-weight: 600;
-	text-decoration: none;
-	padding: 10px 15px;
-	border-radius: 4px;
-	display: inline-block;
-}
+
 
 .product-detail-right .buynow{
 	border: 1px solid #ffa800;
@@ -321,6 +303,7 @@ img{
 
 .product-detail-feature{
 	color: black;
+	
 	width: 100%;
 	float: left;
 	display: inline-block;
@@ -330,6 +313,7 @@ img{
 }
 .product-detail-feature h3{
 	color: black;
+	font-size: 24px;
 	font-weight: 500;
 	border-bottom: 1px solid;
 }
