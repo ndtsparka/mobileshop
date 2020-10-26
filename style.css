@@ -342,5 +342,7 @@ img{
 	border-radius: 4px;
 }
 
-
+.buynow{
+	cursor: pointer;
+}
 
