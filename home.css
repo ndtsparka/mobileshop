@@ -3,11 +3,7 @@
     height: auto;
     vertical-align: middle;
 }
-.footer{
-    background-color: black;
-    display: flexbox;
-    color: white;
-}
+
 .header-title{
     width: 250px;
 }
@@ -210,4 +206,22 @@ ul.tab li.home a{
 }
 .content-price, .content-descripton {
     cursor: default;
+}
+
+.container {
+    width: 100%;
+    display:flex;
+    padding:0 30px;
+    background-color: orange;
+
+}
+.container p{
+    font-size: 18px;
+}
+.col-3{
+    padding-right: 190px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
 }
