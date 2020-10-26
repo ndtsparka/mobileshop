@@ -152,7 +152,7 @@ let products = [{
     'img': './img/oppo-a12-xanh-400x460-400x460.png',
     'brand':'OPPO',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -230,7 +230,7 @@ let products = [{
     'description': 'Quà tặng trị giá lên tới 500.000đ',
     'img': './img/oppo-A52.jpg',
     'brand':'OPPO',    'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -242,7 +242,7 @@ let products = [{
     'img': './img/samsung-galaxy-a21s-3gb-055520-045516-400x460.png',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -254,7 +254,7 @@ let products = [{
     'img': './img/samsung-galaxy-a31.png',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -279,7 +279,7 @@ let products = [{
     'img': './img/samsung-galaxy-a71.jpg',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -291,7 +291,7 @@ let products = [{
     'img': './img/samsung-galaxy-note-20-xanhla-400x460-400x460.png',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -315,7 +315,7 @@ let products = [{
     'img': './img/samsung-galaxy-a30s.jpg',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -327,7 +327,7 @@ let products = [{
     'img': './img/samsung-galaxy-note-20-xanhla-400x460-400x460.png',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
