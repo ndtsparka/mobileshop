@@ -11,7 +11,7 @@ document.getElementById('tongtien').innerHTML=product.price;
 
 
 function success(){
-    document.getElementsByClassName('add-success').style.display='block';
+    document.getElementById('cart-success').style.display='block';
 }
 
 function comehome(){

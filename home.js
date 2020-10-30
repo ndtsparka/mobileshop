@@ -381,6 +381,7 @@ function changedisplay(type,element){
            document.getElementById('main-searchphone').style.display = 'none';
            document.getElementById('hot').style.display = 'none';
            document.getElementById('sub').style.display='none';
+           document.getElementsByClassName('head').style.display='none';
            break;
        case 'main-iphone':
         document.getElementById('all').style.display = 'none';
@@ -389,6 +390,8 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
+        document.getElementsById('head').style.display='none';
+
 
         break;
        case 'main-samsung':
@@ -398,6 +401,7 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
+        document.getElementsById('head').style.display='none';
 
         break;
        case 'main-oppo':
@@ -407,6 +411,7 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
+        document.getElementsById('head').style.display='none';
        
         break;
         
@@ -567,9 +572,9 @@ function searchPhone(){
     let result = products.filter(function(v) {
         return v.name.toLowerCase().includes(search.toLowerCase())
     });
-
+        if( result.length >= 1)
         displaysearchphone(result);
-    
+      
 }
 
 function viewDetail(name){

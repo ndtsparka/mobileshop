@@ -199,8 +199,8 @@ body {
 }
 
 /* */
-.add-success{
-    display: none;
+#cart-success{
+	display: none;
     position: fixed;
     z-index: 1;
     left: 0%;
