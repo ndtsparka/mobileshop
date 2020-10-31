@@ -41,12 +41,8 @@ document.querySelector(".plus-btn").addEventListener("click", function() {
 	if (valueCount > 1) {
 		document.querySelector(".minus-btn").removeAttribute("disabled");
 	}
-	total(price, valueCount);
 })
 
-function total(price, count){
-	document.getElementById('').innerHTML = price * count;
-}
 //minus button
 document.querySelector(".minus-btn").addEventListener("click", function() {
 	//getting value of input
@@ -61,10 +57,4 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
 	if (valueCount == 1) {
 		document.querySelector(".minus-btn").setAttribute("disabled", "")
 	}
-<<<<<<< HEAD
 })
-=======
-	total(price, valueCount);
-
-})
->>>>>>> refs/remotes/origin/master
