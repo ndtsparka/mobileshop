@@ -7,7 +7,8 @@ let product = products.find(function (p) {
 });
 document.getElementById('phone-name-price')
 document.getElementById('image-preview').src=product.img;
-document.getElementById('tongtien').innerHTML=product.price;
+document.getElementById('phone-price').innerHTML=product.price;
+document.getElementById('phone-name').innerHTML=product.name;
 
 
 function success(){
