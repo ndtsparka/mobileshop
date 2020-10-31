@@ -1,0 +1,63 @@
+input:focus {
+	outline:none;
+}
+
+.bar{
+    background-color: #183544;
+    height: 46px;
+}
+
+.bar .tab {
+    display: flex;
+    color: white;
+    list-style: none;
+    height: 46px;
+	margin: 0px;
+	padding-right: 20px;
+}
+
+.bar .tab .home{
+    background-color: tomato;
+}
+
+.bar .tab .home a{
+    text-decoration: none;
+}
+
+.bar .tab .tab-item{
+	width: 100px;
+	padding: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar .tab .search-container {
+	display: flex;
+}
+
+.bar .tab .search-container .text-search {
+    border: none;
+    background: white;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    text-indent: 10px;
+    width: 200px;
+	margin-top: 4px;
+	height: 18px;
+}
+
+.bar .tab .search-container .btn-search {
+    width: 40px;
+    height: 38px;
+	margin: 4px -10px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Cho search-container dính vào bên phải */
+.bar .tab li:last-of-type {
+	margin-left: auto;
+}

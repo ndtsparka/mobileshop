@@ -1,3 +1,71 @@
+/* Thanh điều hướng */
+input:focus {
+	outline:none;
+}
+
+.bar{
+    background-color: #183544;
+    height: 46px;
+}
+
+.bar .tab {
+    display: flex;
+    color: white;
+    list-style: none;
+    height: 46px;
+	margin: 0px;
+	padding-right: 20px;
+}
+
+.bar .tab .home{
+    background-color: tomato;
+}
+
+.bar .tab .home a{
+	 text-decoration: none;
+	 color: white;
+}
+
+.bar .tab .tab-item{
+	width: 100px;
+	padding: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar .tab .search-container {
+	display: flex;
+}
+
+.bar .tab .search-container .text-search {
+    border: none;
+    background: white;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    text-indent: 10px;
+    width: 200px;
+	margin-top: 4px;
+	height: 18px;
+}
+
+.bar .tab .search-container .btn-search {
+    width: 40px;
+    height: 38px;
+	margin: 4px -10px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Cho search-container dính vào bên phải */
+.bar .tab li:last-of-type {
+	margin-left: auto;
+}
+/* Kết thúc thanh điều hướng */
+
+
 .baner-top img{
     width: 100%;
     height:100%;
@@ -7,44 +75,27 @@
 .header-title{
     width: 250px;
 }
+
 .icon{
    height: 20px;
    width: 20px;
    flex: 1;
-}
- .text-search {
-    border: 1px solid wheat;
-    background: white;
-    border-radius: 6px;
-    margin-left: 248px;
-    padding: 10px;
-    font-size: 15px;
-    text-indent: 10px;
-    width: 350px;
-    margin-top: -8px;
-}
-#tab-item-search{
-    height: 12px;
-    width: 20px;
-    background: white;
-    margin: 6px -101px;
-    border-radius: 6px;
-}
-.tab-item{
-    width: 100px;
 }
 
 .content-img:hover{
     transform: scale(1.1);
     transition: all ease 300ms;
 }
+
 .content-name:hover{
     color: blueviolet;
     text-decoration: underline;
 }
+
 .actmenu-icon{
     background:url(img/actmenu-icon.jpg);
 }
+
 .header{
     display: flex;
     background-color:white;
@@ -56,10 +107,12 @@
     color: bisque;
     width: 190px;
 }
+
 .header-title p{
     color: bisque;
     
 }
+
 .header-search{
     background-color: white;
     height: 31px;
@@ -70,18 +123,6 @@
     
 }
 
-#imgsearch{
-    margin: 0;
-}
-#btn {
-    width: 40px;
-    height: 35px;
-    margin: -5px;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-    margin-left: 451px;
-}
 .content {
     border: 0.5px solid moccasin;
     width: 270px;
@@ -89,6 +130,7 @@
     padding: 35px;
     border-radius: 2%;
 }
+
 .content-search{
     border: 0.5px solid moccasin;
     width: 265px;
@@ -97,120 +139,104 @@
     border-radius: 2%;
    
 }
+
 .search-tit{
     width: 100%;
 }
+
 .search-tit h3{
     margin-left: 20px;
 }
+
 #products {
  display: flex;
  flex-wrap: wrap;
  
 }
+
 #main-iphone, #main-oppo, #main-samsung, #main-searchphone{
     display: none;
     flex-wrap: wrap;
     margin-top: 15px;
-   }
+}
+	
 .row{
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
 }
+
 .main{
     margin: 15px 60px;
     background-color: white;
     flex-wrap: wrap;
 }
-body {
-    background-color: blanchedalmond;
-}
-.bar{
-    background-color: #183544;
-    height: 49px;
-}
-.bar ul.tab {
-    display: flex;
-    color: white;
-    list-style: none;
-    height: 49px;
-    margin-left: 21px
-    
 
+body {
+	 background-color: blanchedalmond;
+	 margin: 0px;
 }
-.bar ul.tab li{
-    padding: 13px;
-    text-align: center;
-    cursor: pointer;
-   
-}
-.tab-item img{
-    margin-left: 600px;
-    margin-top: -5px;
-}
-.tab-item-menu a{
-    margin-left: -20px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-ul.tab li.home{
-    background-color: tomato;
-    
-}
-ul.tab li.home a{
-    text-decoration: none;
-    color: white;
-}
+
 .hot-item li{
     list-style: none;
     border: 0.5px solid whitesmoke;
     padding: 10px;
 }
+
 #itemhot{
     display: flex;
     flex-wrap: wrap;
 }
+
 .not-change img{
     width: 420px;
     height: 250px;
 }
+
 .all-title h3, .oppo-title h3, .iphone-title h3, .samsung-title h3 {
     margin-left: 20px;
 }
+
 .all-title{
     padding-top: 1px;
 }
+
 .hot-item{
     background-color: white;
     margin: 0 60px;
 }
+
 .change img{
     height: 250px;
     width: 250px;
 }
+
 .hot-item h3{
     padding-top: 10px;
 }
+
 .sub-banner{
     margin: 10px 60px;
 }
+
 .sub-banner img{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    bord
 }
+
 .content-name h4 {
     cursor: pointer;
 }
+
 .content-price, .content-descripton {
     cursor: default;
 }
+
 #cach{
     margin-left: 45px;
 }
+
 .container {
     width: 96%;
     display:flex;
@@ -218,13 +244,16 @@ ul.tab li.home a{
     background-color: orange;
 
 }
+
 .container p{
     font-size: 18px;
 }
+
 .col-3{
     padding-right: 148px;
     margin-left: 32px;
 }
+
 .icon{
     width: 40px;
     height: 40px;
@@ -235,10 +264,12 @@ ul.tab li.home a{
 .sli{
     display: flex
 }
+
 .decorate{
     /* width: 600px; */
 
 }
+
 #dec, #dec2{
     position: relative;
     right: 35px;
@@ -246,6 +277,7 @@ ul.tab li.home a{
     height: 80px;
     margin-top: 10px;
 }
+
 .slide{
     width: 800px;
     margin: 0 auto;
@@ -255,34 +287,42 @@ ul.tab li.home a{
     margin-left: 20px;
 
 }
+
 .chuyen-slider{
     width: 9999px;
     transition: all 0.5s;
 
 }
+
 .slider{
     width: 800px;
     margin-left: 0p;
 }
+
 #pre{
     position: absolute;
     top: 45%;
     left: 10px;
 }
+
 #next{
     position: absolute;
     top: 45%;
     right: 10px;
 }
+
 #slider-3{
     margin-left: -8px;
 }
+
 .dieuhuong{
     display: none;
 }
+
 .slide:hover .dieuhuong{
     display: block;
 }
+
 #slider-2{
     margin-left: -4px;
     margin-right: 4px ;
