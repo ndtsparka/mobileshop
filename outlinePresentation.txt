@@ -1,0 +1,8 @@
+Intro: tên sản phẩm
+Members: thành viên và mentor
+Idea: ý tưởg
+plan & process: kế hoạch và quá trình
+features: Tính năng
+Demo
+Limitation & future improvements
+Q&A
