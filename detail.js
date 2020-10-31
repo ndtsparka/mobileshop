@@ -36,9 +36,9 @@ function getRelative() {
         phoneDisplayed.push(r);
         let p = products[r];
         let html = `
-            <div onclick="viewDetail('${p.name}')" class="phone-relative col-md-3 col-sm-6 mb-4 text-center">
-                <img class="img-fluid" src="${p.img}" alt=""  width="200px" height="200px">
-                <p class="mt-2 font-weight-bold">${p.name}</p>
+            <div onclick="viewDetail('${p.name}')" class="rela-phone">
+                <img id="rela-img" src="${p.img}" alt="" >
+                <p id="rela-name">${p.name}</p>
             </div>
         `;
         relative.innerHTML += html;

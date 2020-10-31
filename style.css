@@ -102,9 +102,23 @@ img{
 }
 
 #rela{
-	display: flex;
+	margin: 20px 150px;
+	display: flex
 }
+.rela-phone{
+	margin-right: 77px
 
+}
+#rela-img{
+	height: 200px;
+	width: 186px;
+}
+#rela-name{
+	color: blueviolet;
+	margin: 18px;
+	width: 240px;
+	padding-left: 4px;
+}
 /*Header Style*/
 .header{
 	display: inline-block;

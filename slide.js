@@ -7,13 +7,13 @@ max -=kichthuoc;
 function next(){
     if(chuyen<max) chuyen += kichthuoc;
     else chuyen = 0;
-  chuyenslide.style.marginLeft = '-' + chuyen +'px';
+  //chuyenslide.style.marginLeft = '-' + chuyen +'px';
 }
 function pre(){
     if(chuyen === 0) chuyen = max;
     else
     chuyen -= kichthuoc;
-    chuyenslide.style.marginLeft = '-' + chuyen +'px';
+    //chuyenslide.style.marginLeft = '-' + chuyen +'px';
 
 }
 

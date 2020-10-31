@@ -11,8 +11,9 @@ document.getElementById('phone-price').innerHTML=product.price;
 document.getElementById('phone-name').innerHTML=product.name;
 
 
-function success(){
-    document.getElementById('cart-success').style.display='block';
+function success(e){
+	e.preventDefault();
+	document.getElementById('cart-success').style.display='block';
 }
 
 function comehome(){
@@ -41,7 +42,12 @@ document.querySelector(".plus-btn").addEventListener("click", function() {
 		document.querySelector(".minus-btn").removeAttribute("disabled");
 		document.querySelector(".minus-btn").classList.remove("disabled")
 	}
+	total(price, valueCount);
 })
+
+function total(price, count){
+	document.getElementById('').innerHTML = price * count;
+}
 //minus button
 document.querySelector(".minus-btn").addEventListener("click", function() {
 	//getting value of input
@@ -56,4 +62,6 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
 	if (valueCount == 1) {
 		document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
 	}
+	total(price, valueCount);
+
 })

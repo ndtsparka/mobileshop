@@ -91,17 +91,17 @@
 
 
 			<!-- thông tin người mua -->
-			<div class="info-customer">
+			<form class="info-customer" onsubmit="success(event)">
 				<!-- Giới tính -->
 				<div class="gender">
-					<input type="radio" name="gender" value="male" id="male">
+					<input type="radio" checked name="gender" value="male" id="male">
 					<label for="male">Anh</label>
 					<input type="radio" name="gender" value="female" id="female">
 					<label for="female">Chị</label>
 				</div>
 				<!-- Tên/SĐT -->
 				<div class="name-phone-number">
-					<input type="text" placeholder="Họ và tên">
+					<input type="text" required placeholder="Họ và tên">
 					<input type="text" placeholder="Số điện thoại">
 				</div>
 				<!-- Địa chỉ -->
@@ -128,10 +128,10 @@
 			</div>
 			<!-- thông tin người mua -->
 			<div class="order-submit">
-				<input type="submit" value="ĐẶT HÀNG" class="btn" onclick="success()"><br>
+				<button type="submit" class="btn">ĐẶT HÀNG</button><br>
 				<!-- <p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p> -->
 			</div>
-		</div>
+		</form>
 	</div>
 	<!-- trang giỏ hàng chính -->
 
