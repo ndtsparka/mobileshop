@@ -67,9 +67,9 @@
 
 							<!-- Thêm/bớt số lượng sản phẩm -->
 							<div class="quantity">
-								<button class="decreaseButton minus" type="button">-</button>
-								<input type="text" name="quantity" value="1" readonly='readonly'/>
-								<button class="increaseButton plus" type="button">+</button>
+								<button class="btn minus-btn disabled" type="button">-</button>
+								<input type="text" id="quantity" value="1">
+								<button class="btn plus-btn" type="button">+</button>
 							</div>
 						</div>
 					</div>
@@ -146,5 +146,46 @@
 
 	<script src="home.js"></script>
 	<script src="cart.js"></script>
+	<script>
+	
+//Tăng giảm số lượng sản phẩm
+//setting default attribute to disabled of minus button
+document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+
+//taking value to increment decrement input value
+var valueCount
+
+//plus button
+document.querySelector(".plus-btn").addEventListener("click", function() {
+	//getting value of input
+	valueCount = document.getElementById("quantity").value;
+
+	//input value increment by 1
+	valueCount++;
+
+	//setting increment input value
+	document.getElementById("quantity").value = valueCount;
+
+	if (valueCount > 1) {
+		document.querySelector(".minus-btn").removeAttribute("disabled");
+		document.querySelector(".minus-btn").classList.remove("disabled")
+	}
+})
+//minus button
+document.querySelector(".minus-btn").addEventListener("click", function() {
+	//getting value of input
+	valueCount = document.getElementById("quantity").value;
+
+	//input value increment by 1
+	valueCount--;
+
+	//setting increment input value
+	document.getElementById("quantity").value = valueCount
+
+	if (valueCount == 1) {
+		document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+	}
+})
+	</script>
 	</body>
 </html>
