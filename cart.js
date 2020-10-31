@@ -21,7 +21,7 @@ function comehome(){
 
 //Tăng giảm số lượng sản phẩm
 //setting default attribute to disabled of minus button
-document.querySelector(".minus-btn").setAttribute("disabled", "disabled");
+document.querySelector(".minus-btn").setAttribute("disabled", "");
 
 //taking value to increment decrement input value
 var valueCount
@@ -39,7 +39,6 @@ document.querySelector(".plus-btn").addEventListener("click", function() {
 
 	if (valueCount > 1) {
 		document.querySelector(".minus-btn").removeAttribute("disabled");
-		document.querySelector(".minus-btn").classList.remove("disabled")
 	}
 })
 //minus button
@@ -54,6 +53,6 @@ document.querySelector(".minus-btn").addEventListener("click", function() {
 	document.getElementById("quantity").value = valueCount
 
 	if (valueCount == 1) {
-		document.querySelector(".minus-btn").setAttribute("disabled", "disabled")
+		document.querySelector(".minus-btn").setAttribute("disabled", "")
 	}
 })

@@ -94,6 +94,10 @@ body {
 	font-weight: bold;
 }
 
+.detail-cart .list-option .right .buy-option .quantity button[disabled] {
+	cursor: initial;
+}
+
 .detail-cart .list-option .left {
 	width: 80px;
 	display: inline-block;
