@@ -22,3 +22,30 @@ function viewDetail(name){
     localStorage.setItem('products', JSON.stringify(products));
     window.location.href = 'cart.html';
 }
+
+function getRelative() {
+    let relative = document.getElementById('rela');
+    relative.innerHTML = '';
+    let phoneDisplayed = [];
+    for (let i = 0; i < 8; i+=2) {
+
+        let r = getRndInteger(0, products.length);
+        while(phoneDisplayed.includes(r)){
+            r = getRndInteger(0, products.length);
+        }
+        phoneDisplayed.push(r);
+        let p = products[r];
+        let html = `
+            <div onclick="viewDetail('${p.name}')" class="rela-phone">
+                <img id="rela-img" src="${p.img}" alt="" >
+                <p id="rela-name">${p.name}</p>
+            </div>
+        `;
+        relative.innerHTML += html;
+    }
+}
+getRelative();
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }

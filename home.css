@@ -38,6 +38,10 @@
     transform: scale(1.1);
     transition: all ease 300ms;
 }
+.content-name:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
 .actmenu-icon{
     background:url(img/actmenu-icon.jpg);
 }
@@ -232,13 +236,13 @@ ul.tab li.home a{
     display: flex
 }
 .decorate{
-    width: 600px;
+    /* width: 600px; */
 
 }
 #dec, #dec2{
     position: relative;
-    right: 60px;
-    width: 640px;
+    right: 35px;
+    width: 600px;
     height: 80px;
     margin-top: 10px;
 }
@@ -254,6 +258,7 @@ ul.tab li.home a{
 .chuyen-slider{
     width: 9999px;
     transition: all 0.5s;
+
 }
 .slider{
     width: 800px;

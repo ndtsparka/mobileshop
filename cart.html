@@ -25,7 +25,7 @@
 	
 	<!-- trang giỏ hàng chính -->
 	<div class="main-cart">
-		<form>
+		<div>
 			<!-- Danh sách sản phẩm và tổng giá tiền -->
 			<div class="detail-cart">
 				<!-- Danh sách sản phẩm đã chọn -->
@@ -91,7 +91,7 @@
 
 
 			<!-- thông tin người mua -->
-			<div class="info-customer">
+			<form class="info-customer" onsubmit="success(event)">
 				<!-- Giới tính -->
 				<div class="gender">
 					<input type="radio" checked name="gender" value="male" id="male">
@@ -102,7 +102,11 @@
 				<!-- Tên/SĐT -->
 				<div class="name-phone-number">
 					<input type="text" required placeholder="Họ và tên">
+<<<<<<< HEAD
 					<input type="text" required placeholder="Số điện thoại">
+=======
+					<input type="text" placeholder="Số điện thoại">
+>>>>>>> refs/remotes/origin/master
 				</div>
 				<!-- Địa chỉ -->
 				<div class="address">
@@ -128,7 +132,7 @@
 			</div>
 			<!-- thông tin người mua -->
 			<div class="order-submit">
-				<input type="submit" value="ĐẶT HÀNG" class="btn" onclick="success()"><br>
+				<button type="submit" class="btn">ĐẶT HÀNG</button><br>
 				<!-- <p>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</p> -->
 			</div>
 		</form>
