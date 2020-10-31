@@ -237,8 +237,8 @@ ul.tab li.home a{
 }
 #dec, #dec2{
     position: relative;
-    right: 60px;
-    width: 640px;
+    right: 35px;
+    width: 600px;
     height: 80px;
     margin-top: 10px;
 }
@@ -254,6 +254,7 @@ ul.tab li.home a{
 .chuyen-slider{
     width: 9999px;
     transition: all 0.5s;
+
 }
 .slider{
     width: 800px;

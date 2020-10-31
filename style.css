@@ -101,6 +101,9 @@ img{
 	color: #000;
 }
 
+#rela{
+	display: flex;
+}
 
 /*Header Style*/
 .header{
