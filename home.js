@@ -1,6 +1,6 @@
 let products = [{
     'name': 'IPHONE 7 PLUS',
-    'price': '10.990.000đ',
+    'price': 10990000,
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
     'img': './img/iphone-xs-gold-400x460-1-400x460.png',
     'brand':'IPHONE',
@@ -12,7 +12,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 8 PLUS',
-    'price': '14.990.000đ',
+    'price': 14990000,
     'description': 'Giảm thêm 1.000.000đ',
     'img': './img/iphone-8-plus-128gb-082720-052722-400x460.png',
     'brand':'IPHONE',
@@ -24,7 +24,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 7 GOLD',
-    'price': '12.990.000đ',
+    'price': 12990000,
     'description': 'Giảm thêm 1.000.000đ',
     'img': './img/iphone-7-gold-600x600.jpg',
     'brand':'IPHONE',
@@ -36,7 +36,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 8 PLUS 128GB',
-    'price': '18.990.000đ',
+    'price': 18990000,
     'description': 'Giảm thêm 1.000.000đ',
     'img': './img/iphone-8-plus-128gb.jpg',
     'brand':'IPHONE',
@@ -48,7 +48,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 11 PROMAX 512GB',
-    'price': '32.990.000đ',
+    'price': 32990000,
     'description': 'Quà tặng trị giá 4.000.000đ',
     'img': './img/iphone-11-pro-max-512gb-gold-600x600.jpg',
     'brand':'IPHONE',
@@ -60,7 +60,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 12 MINI',
-    'price': '34.990.000đ',
+    'price': 34990000,
     'description': 'Quà tặng trị giá 2.000.000đ',
     'img': './img/iphone-12-mini.jpg',
     'brand':'IPHONE',
@@ -73,7 +73,7 @@ let products = [{
 
 {
     'name': 'IPHONE 11 64GB',
-    'price': '19.990.000đ',
+    'price': 19990000,
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
     'img': './img/iphone-11-red-2-400x460-400x460.png',
     'brand':'IPHONE',
@@ -85,7 +85,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 11 128GB',
-    'price': '21.990.000đ',
+    'price': 21990000,
     'description': 'khuyễn mãi trị giá 1.000.000đ',
     'img': './img/iphone-11-128gb-green-400x460.png',
     'brand':'IPHONE',
@@ -97,7 +97,7 @@ let products = [{
 },
 {
     'name': 'IPHONE XS 64GB',
-    'price': '17.990.000đ',
+    'price': 17990000,
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
     'img': './img/iphone-xs-gold-400x460-1-400x460.png',
     'brand':'IPHONE',
@@ -111,7 +111,7 @@ let products = [{
 
 {
     'name': 'IPHONE 11 PROMAX 512GB',
-    'price': '38.990.000đ',
+    'price': 38990000,
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
     'img': './img/iphone-xs-gold-400x460-1-400x460.png',
     'brand':'IPHONE',
@@ -123,7 +123,7 @@ let products = [{
 },
 {
     'name': 'IPHONE 12 PROMAX 256GB',
-    'price': '38.990.000đ',
+    'price': 38990000,
     'description': 'Quà tặng trị giá 2.000.000đ',
     'img': './img/iphone-12-pro-max-256gb.jpg',
     'brand':'IPHONE',
@@ -135,7 +135,7 @@ let products = [{
 },
 {
     'name': 'IPHONE SE 128GB',
-    'price': '33.990.000đ',
+    'price': 33990000,
     'description': 'Quà tặng trị giá 2.000.000đ',
     'img': './img/iphone-12-pro-max-256gb.jpg',
     'brand':'IPHONE',
@@ -147,7 +147,7 @@ let products = [{
 },
 {
     'name': 'OPPO A12',
-    'price': '2.990.000đ',
+    'price': 2990000,
     'description': 'Giảm 5% khi đặt online',
     'img': './img/oppo-a12-xanh-400x460-400x460.png',
     'brand':'OPPO',
@@ -159,7 +159,7 @@ let products = [{
 },
  {
     'name': 'OPPO A31',
-    'price': '4.490.000đ',
+    'price': 4490000,
     'description': 'Quà tặng lên tới 500.000đ',
     'img': './img/oppo-a31-4gb-128gb-trang-400x460-400x460.png',
     'brand':'OPPO',
@@ -170,7 +170,7 @@ let products = [{
     'ROM': '64GB'
 }, {
     'name': 'OPPO A93',
-    'price': '7.490.000đ',
+    'price': 7490000,
     'description': 'Giảm giá lên tới 5%',
     'img': './img/oppo-a93-230520-060502-400x460.png',
     'brand':'OPPO',
@@ -182,7 +182,7 @@ let products = [{
 }, 
 {
     'name': 'OPPO A53',
-    'price': '4.990.000đ',
+    'price': 4990000,
     'description': 'Quà tặng trị lên tới 500.000đ',
     'img': './img/oppo-a53-2020-blue-400x460-400x460.png',
     'brand':'OPPO',
@@ -194,14 +194,14 @@ let products = [{
 },
 {
     'name': 'OPPO FIND X2',
-    'price': '19.990.000đ',
+    'price': 19990000,
     'description': 'Quà tặng trị lên tới 2.000.000đ',
     'img': './img/oppo-findx.jpg',
     'brand':'OPPO',
 },
 {
     'name': 'OPPO RENO 4',
-    'price': '8.490.000đ',
+    'price': 8490000,
     'description': 'Quà tặng trị giá lên tới 500.000đ',
     'img': './img/oppo-reno4-260720-040737-400x460.png',
     'imgsub':'./img/oppo-reno4-hot.jpg',
@@ -214,7 +214,7 @@ let products = [{
 },
 {
     'name': 'OPPO A9',
-    'price': '5.990.000đ',
+    'price': 5990000,
     'description': 'Giảm giá thêm 5%',
     'img': './img/oppo-a9.jpg',
     'brand':'OPPO',
@@ -226,7 +226,7 @@ let products = [{
 },
 {
     'name': 'OPPO A52',
-    'price': '5.690.000đ',
+    'price': 5690000,
     'description': 'Quà tặng trị giá lên tới 500.000đ',
     'img': './img/oppo-A52.jpg',
     'brand':'OPPO',    'screen': '5.8',
@@ -237,7 +237,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY A21S',
-    'price': '4.390.000Đ',
+    'price': 4390000,
     'description': 'Quà tặng 300.000đ',
     'img': './img/samsung-galaxy-a21s-3gb-055520-045516-400x460.png',
     'brand':'SAMSUNG',
@@ -249,7 +249,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY A31',
-    'price': '6.090.000đ',
+    'price': 6090000,
     'description': 'Quà tặng 300.000đ',
     'img': './img/samsung-galaxy-a31.png',
     'brand':'SAMSUNG',
@@ -261,7 +261,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY NOTE20 ULTRA',
-    'price': '29.990.000đ',
+    'price': 29990000,
     'description': 'Ưu đãi khủng đến 3 triệu khi đặt sớm',
     'img': './img/samsung-galaxy-note-20-ultra-vangdong-400x460-400x460.png',
     'imgsub':'./img/samsung-galaxy-note-20-ultra-hot.jpg',
@@ -274,7 +274,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY A71',
-    'price': '9.990.000đ',
+    'price': 9990000,
     'description': 'Giảm giá thêm 500.000đ',
     'img': './img/samsung-galaxy-a71.jpg',
     'brand':'SAMSUNG',
@@ -286,7 +286,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY NOTE20',
-    'price': '23.990.000đ',
+    'price': 23990000,
     'description': 'Giảm giá 3.000.000đ qua quà tặng Galaxy',
     'img': './img/samsung-galaxy-note-20-xanhla-400x460-400x460.png',
     'brand':'SAMSUNG',
@@ -298,7 +298,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY S20 FE',
-    'price': '15.990.000đ',
+    'price': 15990000,
     'description': 'Giảm giá 2.000.000đ qua quà tặng Galaxy',
     'img': './img/samsung-galaxy-note-20-xanhla-400x460-400x460.png',
     'brand':'SAMSUNG',
@@ -306,11 +306,11 @@ let products = [{
     'OS': 'IOS 13',
     'Camera': '12MP',
     'RAM': '4 GB',
-    'ROM': '64GB'
+    // 'ROM': '64GB'
 },
 {
     'name': 'SAMSUNG GALAXY A30S',
-    'price': '6.290.000đ',
+    'price': 6290000,
     'description': 'Giảm giá thêm 300.000đ',
     'img': './img/samsung-galaxy-a30s.jpg',
     'brand':'SAMSUNG',
@@ -322,7 +322,7 @@ let products = [{
 },
 {
     'name': 'SAMSUNG GALAXY Z-FOLD',
-    'price': '50.00.000đ',
+    'price': 50000000,
     'description': 'Giảm giá 2.000.000đ qua quà tặng Galaxy',
     'img': './img/samsung-galaxy-note-20-xanhla-400x460-400x460.png',
     'brand':'SAMSUNG',
