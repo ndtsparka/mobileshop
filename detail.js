@@ -27,7 +27,7 @@ function getRelative() {
     let relative = document.getElementById('rela');
     relative.innerHTML = '';
     let phoneDisplayed = [];
-    for (let i = 0; i < 26; i+=2) {
+    for (let i = 0; i < 26; i+=7) {
 
         let r = getRndInteger(0, products.length);
         while(phoneDisplayed.includes(r)){
@@ -49,6 +49,7 @@ getRelative();
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
-function viewDetailsub(){
+function viewDetailsub(name){
+    localStorage.setItem('selected',name);
     window.location.href='detail.html'
 }
