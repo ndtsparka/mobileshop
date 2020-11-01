@@ -10,6 +10,7 @@ document.getElementById('phone-price').innerHTML=product.price + 'đ';
 document.getElementById('phone-name').innerHTML=product.name;
 document.getElementById('total-price').innerHTML=product.price + 'đ';
 document.getElementById('order-value').innerHTML=product.price + 'đ';
+document.getElementById('desc').innerHTML = `<span>${product.description}</span>`;
 
 function success(e){
 	e.preventDefault();

@@ -77,7 +77,7 @@ body {
 .detail-cart .list-option .right .buy-option .quantity {
 	float: right;
 	width: 29%;
-	margin-top: 57px;
+	margin-top: 37px;
 }
 
 .detail-cart .list-option .right .buy-option .quantity input {
@@ -98,7 +98,7 @@ body {
 	font-weight: bold;
 }
 
-.detail-cart .list-option .right .buy-option .quantity button[disabled] {
+.detail-cart .list-option .right .buy-option .quantity button {
 	cursor: initial;
 }
 
