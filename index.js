@@ -368,10 +368,6 @@ display();
 
 function changedisplay(type,element){
    let tabs = document.getElementsByClassName('tab-item');
-   for(let i=0; i<tabs.length;i++){
-       tabs[i].style.background = 'rgb(42, 41, 41)';
-   }
-   //element.style.background = 'tomato';
    document.getElementById(type).style.display = 'flex';
    switch (type){
        case 'all':
@@ -570,6 +566,7 @@ function searchPhone(){
         dishot.style.display = 'none';
     let dissub = document.getElementById('sub');
         dissub.style.display = 'none';
+    document.getElementById('main-count').style.display='none';
     let dissearch = document.getElementById('main-searchphone');
         dissearch.style.display = 'flex';
     
@@ -579,9 +576,18 @@ function searchPhone(){
     });
        if(result.length >=1 ){
         displaysearchphone(result);}
+    else{
+        let noresult = document.getElementById('searchphone');
+        noresult.innerHTML=`<img id="searchingsub" src="img/noresult.png" alt="">`
+    }
       
 }
 
+function enter(e) {
+    if (e.key === 'Enter') {
+        searchPhone();
+    }
+}
 
 function displayhotitem(){
     let phoneshot = document.getElementById('itemhot');
@@ -797,5 +803,7 @@ let discount = document.getElementById('main-count');
     let tren20trieu = loctheogia(20000000,100000000);
     displaycount(tren20trieu);
     }
+
+    
 
     

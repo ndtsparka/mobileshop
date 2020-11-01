@@ -208,11 +208,14 @@ a:visited {
 } 
 
 .counts{
-    width: 175px;
+    width: 240px;
     text-align: left;
 }
 #tabitemcount :hover{
     display: block;
+}
+#tabitemcount{
+    width: 240px;
 }
 #main-iphone, #main-oppo, #main-samsung, #main-searchphone, #main-count{
     display: none;
