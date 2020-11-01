@@ -381,7 +381,6 @@ function changedisplay(type,element){
            document.getElementById('main-searchphone').style.display = 'none';
            document.getElementById('hot').style.display = 'none';
            document.getElementById('sub').style.display='none';
-           document.getElementsByClassName('head').style.display='none';
            break;
        case 'main-iphone':
         document.getElementById('all').style.display = 'none';
@@ -390,7 +389,7 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
-        document.getElementsById('head').style.display='none';
+        
 
 
         break;
@@ -401,7 +400,7 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
-        document.getElementsById('head').style.display='none';
+      
 
         break;
        case 'main-oppo':
@@ -411,7 +410,6 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
-        document.getElementsById('head').style.display='none';
        
         break;
         
@@ -552,7 +550,7 @@ function displaysearchphone(phones){
 }
 
 function searchPhone(){
-    let searchPhone = document.getElementsByClassName('text-search');
+    let searchPhone = document.getElementsByClassName('text-search')[0];
     let disall = document.getElementById('all');
         disall.style.display  = 'none';
     let disiphone = document.getElementById('main-iphone');
