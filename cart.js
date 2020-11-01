@@ -17,7 +17,7 @@ function success(e){
 }
 
 function comehome(){
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
 }
 
 //Tăng giảm số lượng sản phẩm
