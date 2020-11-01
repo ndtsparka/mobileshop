@@ -6,7 +6,7 @@ let product = products.find(function (p) {
 });
 
 document.getElementById('product-name').innerHTML = product.name;
-document.getElementById('product-price').innerHTML = product.price + " đ";
+document.getElementById('product-price').innerHTML = changeprice(product);
 document.getElementById('product-img').src = product.img;
 document.getElementById('product-des').innerHTML = product.description;
 document.getElementById('product-brand').innerHTML= product.brand;
@@ -52,4 +52,10 @@ function getRndInteger(min, max) {
 function viewDetailsub(name){
     localStorage.setItem('selected',name);
     window.location.href='detail.html'
+}
+
+
+function changeprice(v){
+
+ return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(v.price);
 }

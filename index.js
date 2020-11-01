@@ -351,7 +351,7 @@ function display() {
             </div>
             <div class="content-price">
                   <h4>
-                     ${product.price}
+                     ${changeprice(product)}
                   </h4>
             </div>
             <div class = "content-descripton">
@@ -440,7 +440,7 @@ function iphone() {
             </div>
             <div class="content-price">
                   <h4>
-                     ${product.price}
+                     ${changeprice(product)}
                   </h4>
             </div>
             <div class = "content-descripton">
@@ -474,7 +474,7 @@ function oppo() {
             </div>
             <div class="content-price">
                   <h4>
-                     ${product.price}
+                     ${changeprice(product)}
                   </h4>
             </div>
             <div class = "content-descripton">
@@ -508,7 +508,7 @@ function samsung() {
             </div>
             <div class="content-price">
                   <h4>
-                     ${product.price}
+                     ${changeprice(product)}
                   </h4>
             </div>
             <div class = "content-descripton">
@@ -540,7 +540,7 @@ function displaysearchphone(phones){
             </div>
             <div class="content-price">
                   <h4>
-                     ${product.price}
+                     ${changeprice(product)}
                   </h4>
             </div>
             <div class = "content-descripton">
@@ -596,48 +596,48 @@ function displayhotitem(){
      <li class="not-change">
         <img src="${products[22].imgsub}" class="content-img" onclick="viewDetail('${products[22].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[22].name}')">${products[22].name}</h4></div>
-        <div class="content-price"><h4>${products[22].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[22])}</h4></div>
         <div class="content-descripton"><p>${products[22].description}</b></p></div>
     </li>
     <li class="change">
         <img src="${products[19].img}" class="content-img"onclick="viewDetail('${products[19].name}')" >
         <div class="content-name"><h4 onclick="viewDetail('${products[19].name}')">${products[19].name}</h4></div>
-        <div class="content-price"><h4>${products[19].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[19])}</h4></div>
         <div class="content-descripton"><p>${products[19].description}</b></p></div>
     </li>
     <li class="change">
         <img src="${products[14].img}" class="content-img" onclick="viewDetail('${products[14].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[14].name}')">${products[14].name}</h4></div>
-        <div class="content-price"><h4>${products[14].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[14])}</h4></div>
         <div class="content-descripton"><p>${products[14].description}</b></p></div>
     </li>
     <li class="change">
         <img src="${products[4].img}" class="content-img" onclick="viewDetail('${products[4].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[4].name}')">${products[4].name}</h4></div>
-        <div class="content-price"><h4>${products[4].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[4])}</h4></div>
         <div class="content-descripton"><p>${products[4].description}</b></p></div>
     </li><li class="not-change">
         <img src="${products[17].imgsub}" class="content-img" onclick="viewDetail('${products[17].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[17].name}')">${products[17].name}</h4></div>
-        <div class="content-price"><h4>${products[17].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[17])}</h4></div>
         <div class="content-descripton"><p>${products[17].description}</b></p></div>
     </li>
     <li class="change">
         <img src="${products[26].img}" class="content-img" onclick="viewDetail('${products[26].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[26].name}')">${products[26].name}</h4></div>
-        <div class="content-price"><h4>${products[26].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[26])}</h4></div>
         <div class="content-descripton"><p>${products[26].description}</b></p></div>
     </li>
     <li class="change">
         <img src="${products[16].img}" class="content-img" onclick="viewDetail('${products[16].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[16].name}')">${products[16].name}</h4></div>
-        <div class="content-price"><h4>${products[16].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[16])}</h4></div>
         <div class="content-descripton"><p>${products[16].description}</b></p></div>
     </li>
     <li class="change">
         <img src="${products[11].img}" class="content-img" onclick="viewDetail('${products[11].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[11].name}')">${products[11].name}</h4></div>
-        <div class="content-price"><h4>${products[11].price}</h4></div>
+        <div class="content-price"><h4>${changeprice(products[11])}</h4></div>
         <div class="content-descripton"><p>${products[11].description}</b></p></div>
     </li>
         `
@@ -717,7 +717,7 @@ function displaycount(item){
                 </div>
                 <div class="content-price">
                       <h4>
-                         ${product.price}
+                         ${changeprice(product)}
                       </h4>
                 </div>
                 <div class = "content-descripton">
@@ -805,5 +805,9 @@ let discount = document.getElementById('main-count');
     }
 
     
+    function changeprice(v){
 
+        return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(v.price);
+       }
+       
     
