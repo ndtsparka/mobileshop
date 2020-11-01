@@ -193,10 +193,6 @@ input:focus {
 	padding-right: 20px;
 }
 
-.bar .tab .home{
-	 background-color: tomato;
-}
-
 .bar .tab .home a{
 	 text-decoration: none;
 	 color: white;

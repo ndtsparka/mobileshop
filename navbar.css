@@ -19,10 +19,6 @@ input:focus {
 	padding-left: 0px;
 }
 
-.bar .tab .home{
-    background-color: tomato;
-}
-
 .bar .tab .home a{
 	text-decoration: none;
 	color: white;
@@ -57,6 +53,10 @@ input:focus {
 	width: 89%;
 	border-radius: 4px;
 	text-align: center;
+}
+
+.bar .tab .cart-btn a:hover {
+	opacity: 90%;
 }
 /* Gio Hang End */
 
