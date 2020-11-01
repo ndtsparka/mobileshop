@@ -121,11 +121,13 @@ a:visited {
 	height: 200px;
 	width: 186px;
 }
-#rela-name{
+#rela-name {
+	cursor: pointer;
 	color: blueviolet;
 	margin: 18px;
 	width: 240px;
 	padding-left: 4px;
+	text-decoration: underline;
 }
 
 /*Header Style*/
