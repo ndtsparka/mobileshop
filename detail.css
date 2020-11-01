@@ -185,11 +185,12 @@ input:focus {
 }
 
 .bar .tab {
+	margin: 30px;
     display: flex;
     color: white;
     list-style: none;
     height: inherit;
-	margin: 0px;
+;
 	padding-right: 20px;
 }
 
@@ -450,6 +451,60 @@ input:focus {
     font-size: 25px;
 }
 
+.sli{
+    display: flex
+}
 
 
 
+.slide{
+    width: 1400px;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 40px;
+
+}
+
+.chuyen-slider{
+    width: 9999px;
+    transition: all 0.5s;
+
+}
+
+.slider{
+    width: 1400px;
+    height: 250px;
+    margin-left: 0p;
+}
+
+#pre{
+    position: absolute;
+    top: 45%;
+    left: 10px;
+}
+
+#next{
+    position: absolute;
+    top: 45%;
+    right: 10px;
+}
+
+#slider-3{
+    margin-left: -8px;
+}
+
+.dieuhuong{
+    display: none;
+}
+
+.slide:hover .dieuhuong{
+    display: block;
+}
+
+#slider-2{
+    margin-left: -4px;
+    margin-right: 4px ;
+}
