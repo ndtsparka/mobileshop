@@ -575,11 +575,7 @@ function searchPhone(){
       
 }
 
-function viewDetail(name){
-    localStorage.setItem('selected', name);
-    localStorage.setItem('products', JSON.stringify(products));
-    window.location.href = 'detail.html';
-}
+
 function displayhotitem(){
     let phoneshot = document.getElementById('itemhot');
        phoneshot.innerHTML = '';
