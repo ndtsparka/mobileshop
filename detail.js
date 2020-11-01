@@ -27,7 +27,7 @@ function getRelative() {
     let relative = document.getElementById('rela');
     relative.innerHTML = '';
     let phoneDisplayed = [];
-    for (let i = 0; i < 8; i+=2) {
+    for (let i = 0; i < 26; i+=2) {
 
         let r = getRndInteger(0, products.length);
         while(phoneDisplayed.includes(r)){
@@ -36,7 +36,7 @@ function getRelative() {
         phoneDisplayed.push(r);
         let p = products[r];
         let html = `
-            <div onclick="viewDetail('${p.name}')" class="rela-phone">
+            <div onclick="viewDetailsub('${p.name}')" class="rela-phone">
                 <img id="rela-img" src="${p.img}" alt="" >
                 <p id="rela-name">${p.name}</p>
             </div>
@@ -49,3 +49,6 @@ getRelative();
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
+function viewDetailsub(){
+    window.location.href='detail.html'
+}

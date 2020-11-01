@@ -552,7 +552,7 @@ function displaysearchphone(phones){
 }
 
 function searchPhone(){
-    let searchPhone = document.getElementById('text-search');
+    let searchPhone = document.getElementsByClassName('text-search');
     let disall = document.getElementById('all');
         disall.style.display  = 'none';
     let disiphone = document.getElementById('main-iphone');
@@ -572,8 +572,8 @@ function searchPhone(){
     let result = products.filter(function(v) {
         return v.name.toLowerCase().includes(search.toLowerCase())
     });
-        if( result.length >= 1)
-        displaysearchphone(result);
+       if(result.length >=1 ){
+        displaysearchphone(result);}
       
 }
 
