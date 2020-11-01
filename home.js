@@ -369,7 +369,7 @@ display();
 function changedisplay(type,element){
    let tabs = document.getElementsByClassName('tab-item');
    for(let i=0; i<tabs.length;i++){
-       tabs[i].style.background = '#183544';
+       tabs[i].style.background = 'rgb(42, 41, 41)';
    }
    element.style.background = 'tomato';
    document.getElementById(type).style.display = 'flex';
