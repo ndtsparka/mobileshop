@@ -2,7 +2,7 @@ let products = [{
     'name': 'IPHONE 7 PLUS',
     'price': 10990000,
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
-    'img': './img/iphone-xs-gold-400x460-1-400x460.png',
+    'img': './img/iphone-7-plus-400x460.png',
     'brand':'IPHONE',
     'screen': '5.5',
     'OS': 'IOS',
@@ -113,7 +113,7 @@ let products = [{
     'name': 'IPHONE 11 PROMAX 512GB',
     'price': 38990000,
     'description': 'Ưu đãi khủng đến 2 triệu khi đặt sớm',
-    'img': './img/iphone-xs-gold-400x460-1-400x460.png',
+    'img': './img/iphone-11-pro-max-512gb-gold-600x600.jpg',
     'brand':'IPHONE',
     'screen': '5.8',
     'OS': 'IOS 13',
@@ -137,7 +137,7 @@ let products = [{
     'name': 'IPHONE SE 128GB',
     'price': 33990000,
     'description': 'Quà tặng trị giá 2.000.000đ',
-    'img': './img/iphone-12-pro-max-256gb.jpg',
+    'img': './img/iphone-se.jpeg',
     'brand':'IPHONE',
     'screen': '5.8',
     'OS': 'IOS 13',
@@ -228,7 +228,7 @@ let products = [{
     'name': 'OPPO A52',
     'price': 5690000,
     'description': 'Quà tặng trị giá lên tới 500.000đ',
-    'img': './img/oppo-A52.jpg',
+    'img': './img/oppo-a52.jpg',
     'brand':'OPPO',    'screen': '5.8',
     'OS': 'Android',
     'Camera': '12MP',
@@ -603,7 +603,7 @@ function displayhotitem(){
         <div class="content-descripton"><p>${products[14].description}</b></p></div>
     </li>
     <li class="change">
-        <img src="${products[19].img}" class="content-img" onclick="viewDetail('${products[4].name}')">
+        <img src="${products[4].img}" class="content-img" onclick="viewDetail('${products[4].name}')">
         <div class="content-name"><h4 onclick="viewDetail('${products[4].name}')">${products[4].name}</h4></div>
         <div class="content-price"><h4>${products[4].price}</h4></div>
         <div class="content-descripton"><p>${products[4].description}</b></p></div>

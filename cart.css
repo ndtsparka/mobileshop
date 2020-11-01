@@ -59,10 +59,17 @@ body {
 	width: 450px;
 }
 
-.detail-cart .list-option .right #desc ul {
-	padding: 5px 0 5px 15px;
+.detail-cart .list-option .right #desc {
+	padding: 5px 0 5px 1px;
 	font-size: 14px;
-	margin: 0px;
+	width: 304px;
+}
+
+.detail-cart .list-option .right #desc span:before {
+	content: '•';
+	color: #999;
+	margin: 0 7px 0 0;
+	
 }
 
 .detail-cart .list-option .right #phone-name-price a {
@@ -77,16 +84,18 @@ body {
 .detail-cart .list-option .right .buy-option .quantity {
 	float: right;
 	width: 29%;
-	margin-top: 45px;
+	margin-top: 15px;
 }
 
 .detail-cart .list-option .right .buy-option .quantity input {
 	text-align: center;
 	width: 37px;
-	height: 32px;
 	margin: 0px;
+	padding: 11px 0 9px 0;
 	font-size: 14px;
 	cursor: initial;
+	border-radius: 3px;
+	border: 1px solid rgb(172, 172, 172);
 }
 
 .detail-cart .list-option .right .buy-option .quantity button {
@@ -150,11 +159,13 @@ body {
 	width: 16px;
 	height: 16px;
 	cursor: pointer;
+	vertical-align: middle;
 }
 
 .info-customer .gender label {
 	margin: 0 20px 0 0;
 	cursor: pointer;
+	vertical-align: middle;
 }
 
 .info-customer .name-phone-number input, .address input  {
@@ -182,10 +193,12 @@ body {
 	width: 15px;
 	height: 15px;
 	cursor: pointer;
+	vertical-align: middle;
 }
 
 .info-customer .service label {
 	cursor: pointer;
+	vertical-align: middle;
 }
 
 .order-submit {
