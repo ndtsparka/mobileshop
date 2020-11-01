@@ -6,6 +6,7 @@ input:focus {
 .bar{
     background-color: rgb(42, 41, 41);
     height: 50px;
+    margin-top: 15px;
 }
 
 .bar .tab {
@@ -298,26 +299,16 @@ body {
     display: flex
 }
 
-.decorate{
-    /* width: 600px; */
 
-}
-
-#dec, #dec2{
-    position: relative;
-    right: 35px;
-    width: 600px;
-    height: 80px;
-    margin-top: 10px;
-}
 
 .slide{
-    width: 800px;
+    width: 1400px;
+    height: 250px;
     margin: 0 auto;
     overflow: hidden;
     margin-top: 10px;
     position: relative;
-    margin-left: 20px;
+    margin-left: 40px;
 
 }
 
@@ -328,7 +319,8 @@ body {
 }
 
 .slider{
-    width: 800px;
+    width: 1400px;
+    height: 250px;
     margin-left: 0p;
 }
 
