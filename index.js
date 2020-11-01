@@ -371,7 +371,7 @@ function changedisplay(type,element){
    for(let i=0; i<tabs.length;i++){
        tabs[i].style.background = 'rgb(42, 41, 41)';
    }
-   element.style.background = 'tomato';
+   //element.style.background = 'tomato';
    document.getElementById(type).style.display = 'flex';
    switch (type){
        case 'all':
@@ -381,6 +381,7 @@ function changedisplay(type,element){
            document.getElementById('main-searchphone').style.display = 'none';
            document.getElementById('hot').style.display = 'none';
            document.getElementById('sub').style.display='none';
+           document.getElementById('main-count').style.display='none';
            break;
        case 'main-iphone':
         document.getElementById('all').style.display = 'none';
@@ -389,6 +390,8 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
+        document.getElementById('main-count').style.display='none';
+
         
 
 
@@ -400,6 +403,8 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
+        document.getElementById('main-count').style.display='none';
+
       
 
         break;
@@ -410,6 +415,8 @@ function changedisplay(type,element){
         document.getElementById('main-searchphone').style.display = 'none';
         document.getElementById('hot').style.display = 'none';
         document.getElementById('sub').style.display='none';
+        document.getElementById('main-count').style.display='none';
+
        
         break;
         
@@ -638,3 +645,157 @@ function viewDetail(name){
     localStorage.setItem('products', JSON.stringify(products));
     window.location.href = 'detail.html';
 }
+
+// xeptangdan
+document.getElementById("tangdan").addEventListener("click", xeptangdan);
+ function xeptangdan() {
+    let disall = document.getElementById('all');
+    disall.style.display  = 'none';
+let disiphone = document.getElementById('main-iphone');
+    disiphone.style.display = 'none';
+let disoppo = document.getElementById('main-oppo');
+    disoppo.style.display = 'none';
+let dissamsung = document.getElementById('main-samsung');
+    dissamsung.style.display = 'none';
+    let dishot = document.getElementById('hot');
+    dishot.style.display = 'none';
+let dissub = document.getElementById('sub');
+    dissub.style.display = 'none';
+let dissearch = document.getElementById('main-searchphone');
+    dissearch.style.display = 'none';
+let discount = document.getElementById('main-count');
+    discount.style.display = 'block';
+    let tang = products.sort(function(a, b) {
+        return a.price - b.price });
+    displaycount(tang);
+}
+// xepgiamdan
+document.getElementById("thapdan").addEventListener("click", xepgiamdan);
+
+  
+function xepgiamdan(){
+    let disall = document.getElementById('all');
+    disall.style.display  = 'none';
+let disiphone = document.getElementById('main-iphone');
+    disiphone.style.display = 'none';
+let disoppo = document.getElementById('main-oppo');
+    disoppo.style.display = 'none';
+let dissamsung = document.getElementById('main-samsung');
+    dissamsung.style.display = 'none';
+    let dishot = document.getElementById('hot');
+    dishot.style.display = 'none';
+let dissub = document.getElementById('sub');
+    dissub.style.display = 'none';
+let dissearch = document.getElementById('main-searchphone');
+    dissearch.style.display = 'none';
+let discount = document.getElementById('main-count');
+    discount.style.display = 'block';
+   let giam= products.sort(function(a, b) {
+        return b.price - a.price });
+    displaycount(giam);
+}
+
+function displaycount(item){
+       let count = document.getElementById('count');
+       count.innerHTML ='';
+       for(const product of item){
+       let recount = `
+          <div class="content-search">
+                <div class="content-img">
+                    <img src="${product.img}" alt=""  width="240px" height="240px" onclick="viewDetail('${product.name}')">
+                </div>
+                <div class="content-name">
+                    <h4 onclick="viewDetail('${product.name}')">
+                    ${product.name}
+                    </h4>
+                </div>
+                <div class="content-price">
+                      <h4>
+                         ${product.price}
+                      </h4>
+                </div>
+                <div class = "content-descripton">
+                    <p>${product.description}</p>
+                <div>
+          </div>
+          `
+            count.innerHTML += recount;
+        }  
+       }
+
+
+
+       function loctheogia(min,max){
+        let result = products.filter(function(v){
+            return  v.price<=max && min<v.price;
+        })
+        return result;
+    }
+
+    document.getElementById("thaphon10").addEventListener("click", display10tr);
+    function display10tr(){
+     let disall = document.getElementById('all');
+    disall.style.display  = 'none';
+let disiphone = document.getElementById('main-iphone');
+    disiphone.style.display = 'none';
+let disoppo = document.getElementById('main-oppo');
+    disoppo.style.display = 'none';
+let dissamsung = document.getElementById('main-samsung');
+    dissamsung.style.display = 'none';
+    let dishot = document.getElementById('hot');
+    dishot.style.display = 'none';
+let dissub = document.getElementById('sub');
+    dissub.style.display = 'none';
+let dissearch = document.getElementById('main-searchphone');
+    dissearch.style.display = 'none';
+let discount = document.getElementById('main-count');
+    discount.style.display = 'block';
+    let duoi10trieu = loctheogia(0,10000000);
+    displaycount(duoi10trieu);
+    }
+
+    document.getElementById("thaphon20").addEventListener("click", display20tr);
+    function display20tr(){
+        let disall = document.getElementById('all');
+    disall.style.display  = 'none';
+let disiphone = document.getElementById('main-iphone');
+    disiphone.style.display = 'none';
+let disoppo = document.getElementById('main-oppo');
+    disoppo.style.display = 'none';
+let dissamsung = document.getElementById('main-samsung');
+    dissamsung.style.display = 'none';
+    let dishot = document.getElementById('hot');
+    dishot.style.display = 'none';
+let dissub = document.getElementById('sub');
+    dissub.style.display = 'none';
+let dissearch = document.getElementById('main-searchphone');
+    dissearch.style.display = 'none';
+let discount = document.getElementById('main-count');
+    discount.style.display = 'block';
+    let duoi20trieu = loctheogia(10000000,20000000);
+    displaycount(duoi20trieu);
+    }
+
+    document.getElementById("tren20").addEventListener("click", displayhon20tr);
+    function displayhon20tr(){
+        let disall = document.getElementById('all');
+    disall.style.display  = 'none';
+let disiphone = document.getElementById('main-iphone');
+    disiphone.style.display = 'none';
+let disoppo = document.getElementById('main-oppo');
+    disoppo.style.display = 'none';
+let dissamsung = document.getElementById('main-samsung');
+    dissamsung.style.display = 'none';
+    let dishot = document.getElementById('hot');
+    dishot.style.display = 'none';
+let dissub = document.getElementById('sub');
+    dissub.style.display = 'none';
+let dissearch = document.getElementById('main-searchphone');
+    dissearch.style.display = 'none';
+let discount = document.getElementById('main-count');
+    discount.style.display = 'block';
+    let tren20trieu = loctheogia(20000000,100000000);
+    displaycount(tren20trieu);
+    }
+
+    
