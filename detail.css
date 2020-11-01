@@ -458,7 +458,6 @@ input:focus {
 
 
 .slide{
-
     width: 1400px;
     height: 250px;
     margin: 0 auto;
@@ -476,7 +475,6 @@ input:focus {
 }
 
 .slider{
-	margin:10px;
     width: 1400px;
     height: 250px;
     margin-left: 0p;
