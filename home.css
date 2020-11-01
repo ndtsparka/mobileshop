@@ -1,20 +1,21 @@
-/* Thanh điều hướng */
+/* Thanh Điều Hướng */
 input:focus {
 	outline:none;
 }
 
 .bar{
-    background-color: #183544;
-    height: 46px;
+    background-color: rgb(42, 41, 41);
+    height: 50px;
 }
 
 .bar .tab {
     display: flex;
     color: white;
     list-style: none;
-    height: 46px;
+    height: inherit;
 	margin: 0px;
 	padding-right: 20px;
+	padding-left: 0px;
 }
 
 .bar .tab .home{
@@ -22,16 +23,41 @@ input:focus {
 }
 
 .bar .tab .home a{
-	 text-decoration: none;
-	 color: white;
+	text-decoration: none;
+	color: white;
+	display: block;
+	height: 20px;
+	width: 100px;
+	padding: 15px 0px;
+	text-align: center;
 }
 
-.bar .tab .tab-item{
-	width: 100px;
-	padding: 13px;
-    text-align: center;
-    cursor: pointer;
+.bar .tab .tab-item:not(.home) {
+  display: block;
+  width: 100px;
+  padding: 15px 0px;
+	text-align: center;
+	cursor: pointer;
 }
+
+.bar .tab .tab-item:hover {
+	opacity: 90%;
+}
+
+/* Nút gio hàng */
+/* .bar .tab .cart-btn {
+	padding: 6px 20px 0 0;
+}
+
+.bar .tab .cart-btn a {
+	display: block;
+	border: 1px solid;
+	padding: 9px;
+	width: 89%;
+	border-radius: 4px;
+	text-align: center;
+} */
+/* Gio Hang End */
 
 .bar .tab .search-container {
 	display: flex;
@@ -45,26 +71,33 @@ input:focus {
     font-size: 15px;
     text-indent: 10px;
     width: 200px;
-	margin-top: 4px;
+	margin-top: 6px;
 	height: 18px;
 }
 
 .bar .tab .search-container .btn-search {
     width: 40px;
     height: 38px;
-	margin: 4px -10px;
+	margin: 6px -10px;
 	border-radius: 5px;
 	border: none;
 	background-color: white;
 	cursor: pointer;
 }
 
-/* Cho search-container dính vào bên phải */
+/* Cho search-container dính vào bên phải	 */
 .bar .tab li:last-of-type {
 	margin-left: auto;
 }
 /* Kết thúc thanh điều hướng */
 
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
 
 .baner-top img{
     width: 100%;

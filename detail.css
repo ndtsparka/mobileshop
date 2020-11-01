@@ -32,7 +32,7 @@ input{
 body {
 	line-height: 1;
 	font-family: open sans;
-	font-size: 14px;
+	/* font-size: 14px; */
 }
 ol, ul {
 	list-style: none;
@@ -53,13 +53,21 @@ img{
 	max-width: 100%;
 }
 
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
 .container{
 	width: 90%;
 	margin: 0 auto;
 }
 
 /*Topbar Style*/
-.topbar{
+/* .topbar{
 	display: inline-block;
 	width: 100%;
 	height: 30px;
@@ -99,15 +107,15 @@ img{
 }
 .topbar ul li a:hover{
 	color: #000;
-}
+} */
 
+/* Sản phẩm nổi bật */
 #rela{
 	margin: 20px 150px;
 	display: flex
 }
 .rela-phone{
 	margin-right: 77px
-
 }
 #rela-img{
 	height: 200px;
@@ -119,8 +127,9 @@ img{
 	width: 240px;
 	padding-left: 4px;
 }
+
 /*Header Style*/
-.header{
+/* .header{
 	display: inline-block;
 	width: 100%;
 	float: left;
@@ -161,16 +170,97 @@ img{
 	background-color: black;
 	color: #fff;
 	font-weight: 600;
+} */
+
+/* Thanh Điều Hướng */
+input:focus {
+	outline:none;
 }
 
+.bar{
+    background-color: rgb(42, 41, 41);
+    height: 50px;
+}
 
+.bar .tab {
+    display: flex;
+    color: white;
+    list-style: none;
+    height: inherit;
+	margin: 0px;
+	padding-right: 20px;
+}
 
+.bar .tab .home{
+	 background-color: tomato;
+}
 
+.bar .tab .home a{
+	 text-decoration: none;
+	 color: white;
+	 display: block;
+	 height: 50px;
+	 width: 100px;
+	 padding: 15px 25px;
+}
 
+.bar .tab .tab-item:not(.home) {
+	display: block;
+	width: 100px;
+	padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
 
+.bar .tab .tab-item:hover {
+	opacity: 90%;
+}	
 
+/* Nút gio hàng */
+/* .bar .tab .cart-btn {
+	padding: 6px 25px 0 0;
+}
 
+.bar .tab .cart-btn a {
+	display: block;
+	border: 1px solid;
+	padding: 10px;
+	width: 118%;
+	border-radius: 4px;
+	text-align: center;
+} */
+/* Gio Hang End */
 
+.bar .tab .search-container {
+	display: flex;
+}
+
+.bar .tab .search-container .text-search {
+    border: none;
+    background: white;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 15px;
+    text-indent: 10px;
+    width: 200px;
+	margin-top: 6px;
+	height: 38px;
+}
+
+.bar .tab .search-container .btn-search {
+    width: 40px;
+    height: 38px;
+	margin: 6px -10px;
+	border-radius: 5px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+/* Cho search-container dính vào bên phải */	
+.bar .tab li:last-of-type {
+	margin-left: auto;
+}
 
 
 /*Product Area Style*/
@@ -180,6 +270,7 @@ img{
 	display: inline-block;
 	padding: 25px 0;
 }
+
 /*Product Area Heading*/
 .product-area h3{
 	font-size: 28px;
@@ -220,14 +311,6 @@ img{
 }
 
 
-
-
-
-
-
-
-
-
 /*Footer Style*/
 .footer{
 	width: 100%;
@@ -257,11 +340,6 @@ img{
 	font-weight: 600;
 	margin-bottom: 15px;
 }
-
-
-
-
-
 
 
 /*Product Detail Page Style*/
@@ -348,8 +426,9 @@ img{
 	max-width: inherit;
 	
 }
+
 /*Banner Style*/
-.banner{
+/* .banner{
 	width: 100%;
 	float: left;
 	display: inline-block;
@@ -357,7 +436,7 @@ img{
 }
 .banner img{
 	border-radius: 4px;
-}
+} */
 
 .buynow{
 	cursor: pointer;

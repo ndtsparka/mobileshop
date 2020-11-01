@@ -4,38 +4,35 @@
 	<title>Product Detail Page</title>
 	<!-- Font Awesome, Style -->
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="detail.css">
 
 </head>
 <body>
 	<!-- Topbar Start -->
-	<div class="topbar">
-		<div class="container">
-
-		
-
-			<!-- Top Center -->
-			<div class="topcenter">
-				<ul>
-					<li><a href="home.html">Home</a></li>
-				
-				</ul>
-			</div>
-
-			<!-- Top Right -->
-			<div class="topright">
-				<ul>
-					<li><a href="#"><i class="fas fa-phone"></i> 0123.456.789</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<!-- <div class="topbar"> -->
+	<!-- 	<div class="container"> -->
+	<!-- 		<!&#45;&#45; Top Center &#45;&#45;> -->
+	<!-- 		<div class="topcenter"> -->
+	<!-- 			<ul> -->
+	<!-- 				<li><a href="home.html">Home</a></li> -->
+	<!-- 			 -->
+	<!-- 			</ul> -->
+	<!-- 		</div> -->
+  <!--  -->
+	<!-- 		<!&#45;&#45; Top Right &#45;&#45;> -->
+	<!-- 		<div class="topright"> -->
+	<!-- 			<ul> -->
+	<!-- 				<li><a href="#"><i class="fas fa&#45;phone"></i> 0123.456.789</a></li> -->
+	<!-- 					</ul> -->
+	<!-- 				</li> -->
+	<!-- 			</ul> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+	<!-- </div> -->
 	<!-- Topbar End -->
 
 	<!-- Header Start -->
-	<div class="header">
+	<!-- <div class="header">
 		<div class="container">
 			<div class="logo">
 				<img src="">
@@ -47,23 +44,60 @@
 			</div>
 			<div class="headerright">
 				<ul>
-					
 					<li><a href="cart.html" class="signBtn">Cart</a></li>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</div> -->
   <!-- Header End -->
 
   <!-- Banner -->
-  <div class="banner">
+  <!-- <div class="banner">
 	<div class="container">
 		<img src="https://1.bp.blogspot.com/-ZhsKKkTdvnI/U1uDVaBTVmI/AAAAAAAABdI/fZTSWP0U7Bw/s1600/banner.jpg" alt="Banner" width=100%>
+	</div> -->
+	<!-- Banner End -->
+
+	<!-- Navigation Bar -->
+	<div class="bar">
+		<ul class="tab">
+			<li class="tab-item home">
+				<a href="home.html">HOME</a>
+			</li>
+			<li class="tab-item all" onclick="changedisplay('all',this)">TẤT CẢ</li>
+			<li class="tab-item apple" onclick="changedisplay('main-iphone',this)">
+				APPLE
+			</li>
+			<li class="tab-item samsung" onclick="changedisplay('main-samsung',this)">
+				SAMSUNG
+			</li>
+			<li class="tab-item oppo" onclick="changedisplay('main-oppo',this)">
+				OPPO
+			</li>
+			<!-- <li class="cart-btn">
+				<a href="cart.html">
+					<span>Giỏ Hàng</span>
+				</a>
+			</li> -->
+			<li class="search-container">
+					<input
+						class="text-search"
+						type="text"
+						placeholder="Tìm kiếm sản phẩm..."
+					/>
+					<button class="btn-search" onclick="searchPhone()">
+						<img
+							id="imgsearch"
+							src="img/search.png"
+							alt="btnsearch"
+							width="30px"
+							height="30px"
+						/>
+					</button>
+			</li>
+		</ul>
 	</div>
-
-<!-- Banner End -->
-
-
+	<!-- Navigation Bar End -->
 
   <!-- Product Detail Page Start -->
 	<div class="product-detail">
