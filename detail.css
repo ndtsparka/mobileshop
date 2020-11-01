@@ -450,6 +450,10 @@ input:focus {
     font-size: 25px;
 }
 
+.bar{
+    background-color: rgb(42, 41, 41);
+    height: 50px;
+}
 
 
 
