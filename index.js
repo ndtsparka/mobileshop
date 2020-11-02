@@ -582,12 +582,12 @@ function searchPhone(){
     });
        if(result.length >=1 ){
         let searcht = document.getElementById('search-tit');
-        searcht.innerHTML = `<h3>Kết quả tìm kiếm  : có ${result.length} kết quả cho ${document.getElementsByClassName('text-search')[0].value} </h3>`
+        searcht.innerHTML = `<h3>Kết quả tìm kiếm  : Có ${result.length} kết quả cho "${document.getElementsByClassName('text-search')[0].value}" </h3>`
         displaysearchphone(result);}
     else{
         let noresult = document.getElementById('searchphone');
         let searcht = document.getElementById('search-tit');
-        searcht.innerHTML = `<h3>Kết quả tìm kiếm :  có ${result.length} kết quả cho ${document.getElementsByClassName('text-search')[0].value} </h3>`
+        searcht.innerHTML = `<h3>Kết quả tìm kiếm :  Có ${result.length} kết quả cho "${document.getElementsByClassName('text-search')[0].value}" </h3>`
         noresult.innerHTML=`<img id="searchingsub" src="img/noresult.png" alt="">`
     }
       
