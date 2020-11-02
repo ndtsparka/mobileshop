@@ -308,7 +308,7 @@ let products = [{
     'img': './img/samsung-galaxy-note-20-xanhla-400x460-400x460.png',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
