@@ -199,10 +199,14 @@ input:focus {
 	 display: block;
 	 height: 50px;
 	 width: 100px;
-	 padding: 15px 25px;
 }
-
-.bar .tab .tab-item:not(.home) {
+#tabhome{
+	width: 9%;
+}
+.tab li:hover{
+ background-color: yellowgreen;
+}
+.bar .tab .tab-item {
 	display: block;
 	width: 100px;
 	padding: 15px;
@@ -257,7 +261,7 @@ input:focus {
 
 /* Cho search-container dính vào bên phải */	
 .bar .tab li:last-of-type {
-	margin-left: auto;
+	margin-right: auto;
 }
 
 
