@@ -173,11 +173,11 @@ a:visited {
    
 }
 
-.search-tit{
+#search-tit{
     width: 100%;
 }
 
-.search-tit h3{
+#search-tit h3{
     margin-left: 20px;
 }
 

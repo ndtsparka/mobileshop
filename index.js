@@ -198,6 +198,11 @@ let products = [{
     'description': 'Quà tặng trị lên tới 2.000.000đ',
     'img': './img/oppo-findx.jpg',
     'brand':'OPPO',
+    'screen': '5.8',
+    'OS': 'Android',
+    'Camera': '12MP',
+    'RAM': '4 GB',
+    'ROM': '64GB'
 },
 {
     'name': 'OPPO RENO 4',
@@ -207,7 +212,7 @@ let products = [{
     'imgsub':'./img/oppo-reno4-hot.jpg',
     'brand':'OPPO',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -306,7 +311,7 @@ let products = [{
     'OS': 'IOS 13',
     'Camera': '12MP',
     'RAM': '4 GB',
-    // 'ROM': '64GB'
+    'ROM': '64GB'
 },
 {
     'name': 'SAMSUNG GALAXY A30S',
@@ -527,6 +532,7 @@ samsung();
 function displaysearchphone(phones){
     let searchphone = document.getElementById('searchphone');
     searchphone.innerHTML='';
+    
     for (const product of phones) {
         let search = `
       <div class="content-search">
@@ -572,12 +578,16 @@ function searchPhone(){
     
     let search = searchPhone.value;
     let result = products.filter(function(v) {
-        return v.name.toLowerCase().includes(search.toLowerCase())
+        return v.name.toLowerCase().includes(search.toLowerCase().trim())
     });
        if(result.length >=1 ){
+        let searcht = document.getElementById('search-tit');
+        searcht.innerHTML = `<h3>Kết quả tìm kiếm  : có ${result.length} kết quả cho ${document.getElementsByClassName('text-search')[0].value} </h3>`
         displaysearchphone(result);}
     else{
         let noresult = document.getElementById('searchphone');
+        let searcht = document.getElementById('search-tit');
+        searcht.innerHTML = `<h3>Kết quả tìm kiếm :  có ${result.length} kết quả cho ${document.getElementsByClassName('text-search')[0].value} </h3>`
         noresult.innerHTML=`<img id="searchingsub" src="img/noresult.png" alt="">`
     }
       
