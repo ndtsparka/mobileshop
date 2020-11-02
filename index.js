@@ -164,7 +164,7 @@ let products = [{
     'img': './img/oppo-a31-4gb-128gb-trang-400x460-400x460.png',
     'brand':'OPPO',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -175,7 +175,7 @@ let products = [{
     'img': './img/oppo-a93-230520-060502-400x460.png',
     'brand':'OPPO',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -187,7 +187,7 @@ let products = [{
     'img': './img/oppo-a53-2020-blue-400x460-400x460.png',
     'brand':'OPPO',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
@@ -272,7 +272,7 @@ let products = [{
     'imgsub':'./img/samsung-galaxy-note-20-ultra-hot.jpg',
     'brand':'SAMSUNG',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
