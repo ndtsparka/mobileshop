@@ -224,7 +224,7 @@ let products = [{
     'img': './img/oppo-a9.jpg',
     'brand':'OPPO',
     'screen': '5.8',
-    'OS': 'IOS 13',
+    'OS': 'Android',
     'Camera': '12MP',
     'RAM': '4 GB',
     'ROM': '64GB'
